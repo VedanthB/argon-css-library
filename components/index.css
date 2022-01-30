@@ -1,13 +1,21 @@
 /* base/reset styles */
-@import "./resetStyles.css";
+@import "./shared/resets.css";
+
+/* 
+shared
+*/
 
 /* variables */
-@import "./variables.css";
-
+@import "./shared/variables.css";
 /* colors */
+@import "./shared/colors.css";
+/* images */
+@import "./shared/image.css";
+/* animations */
+@import "./shared/animation.css";
 
-@import "./colors.css";
-
-/* components */
-@import "./image.css";
+/* 
+components
+ */
 @import "./avatar.css";
+@import "./badge.css";
