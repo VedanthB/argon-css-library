@@ -553,69 +553,7 @@
   text-decoration-thickness: 2px;
 }
 
-/* @each $key, $val in $colors {
-  .btn-#{$key} {
-    @include btn($val, math.div($base-border-radius, 4));
-    &:hover {
-      background-color: lighten($val, 10);
-    }
-  }
-  // link button
-  .btn-#{$key}-link {
-    @include btn($val, math.div($base-border-radius, 4));
-    text-decoration: underline;
-    background-color: transparent;
-    text-decoration-color: $val;
-    text-underline-position: under;
-    &:hover {
-      color: $val;
-      text-decoration-thickness: 2px;
-    }
-  }
-
-  .btn-#{$key}-icon {
-    @include btn(transparent, math.div($base-border-radius, 4));
-    color: $val;
-    &:hover {
-      color: lighten($val, 10);
-    }
-  }
-
-  // rounded buttons
-  .btn-#{$key}-rounded {
-    @include btn($val, $base-border-radius);
-    &:hover {
-      background-color: lighten($val, 10);
-    }
-  }
-
-  .btn-outlined-#{$key} {
-    @include btn(#fff, math.div($base-border-radius, 4));
-    border: $base-border-thickness solid $val;
-    &:hover {
-      background-color: $val;
-    }
-  }
-
-  // rounded outlined buttons
-  .btn-outlined-#{$key}-rounded {
-    @include btn(#fff, $base-border-radius);
-    border: $base-border-thickness solid $val;
-    &:hover {
-      background-color: $val;
-    }
-  }
-
-  .btn-complement-#{$key} {
-    @include btn($val);
-    color: light-comp($val);
-    &:hover {
-      color: $val;
-      background-color: light-comp($val);
-    }
-  }
-} */
-
+/* icon button */
 .btn-icon {
   margin-right: 8px;
 }
