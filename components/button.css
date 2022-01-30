@@ -1,5 +1,4 @@
 .btn {
-  /* background-color: transparent; */
   padding: calc(var(--base-padding) * 4) calc(var(--base-padding) * 10);
   display: inline-flex;
   border-radius: calc(var(--base-border-radius) / 4);
