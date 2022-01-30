@@ -2206,3 +2206,28 @@
 .bg-hover-slate-900:hover {
   background-color: var(--slate-900);
 }
+
+.bg-white {
+  background-color: white;
+}
+.bg-black {
+  background-color: black;
+}
+.bg-hover-white:hover {
+  background-color: white;
+}
+.bg-hover-black:hover {
+  background-color: black;
+}
+.text-white {
+  color: white;
+}
+.text-black {
+  color: black;
+}
+.text-hover-white:hover {
+  color: white;
+}
+.text-hover-black:hover {
+  color: black;
+}

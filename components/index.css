@@ -7,3 +7,7 @@
 /* colors */
 
 @import "./colors.css";
+
+/* components */
+@import "./image.css";
+@import "./avatar.css";

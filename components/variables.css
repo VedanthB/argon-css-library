@@ -20,7 +20,8 @@
   --stone-500: #78716c;
   --grey-500: #6b7280;
   --slate-500: #64748b;
-
+  --white: white;
+  --black: black;
   /* light and dark variations of the colors */
 
   --pink-100: #fce7f3;
