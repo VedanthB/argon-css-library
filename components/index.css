@@ -1,0 +1,13 @@
+/* base/reset styles */
+@import "./resetStyles.css";
+
+/* variables */
+@import "./variables.css";
+
+/* colors */
+
+@import "./colors.css";
+
+/* components */
+@import "./image.css";
+@import "./avatar.css";
