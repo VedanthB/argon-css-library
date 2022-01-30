@@ -4,6 +4,7 @@
   line-height: 1;
   text-align: center;
   border-radius: 0.3rem;
+  cursor: pointer;
 }
 
 .rounded-pill-badge {
@@ -34,7 +35,6 @@
   background-color: #dc3545;
 }
 .status-badge-number {
-  background-color: #ff3f6c;
   border: none;
   right: -1rem;
   top: -0.7rem;
