@@ -1,0 +1,164 @@
+.input-container {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+}
+.input-outlined {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #e1e5ee;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+  /* Change border when input focus*/
+}
+
+.error {
+  position: absolute;
+  top: 3.2rem;
+  left: 6px;
+}
+
+.input-label {
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+/* 
+1. When the input is in the focus state
+reduce the size of the label and move upwards 
+
+2. Keep label state when content is in input field 
+*/
+.input-outlined:focus ~ .input-label,
+.input-outlined:not(:placeholder-shown).input-outlined:not(:focus)
+  ~ .input-label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+/* color variants outlined input */
+
+.input-outlined-grey:hover {
+  border-color: var(--grey-200);
+}
+.input-outlined-grey:focus {
+  border-color: var(--grey-500);
+}
+.input-outlined-stone:hover {
+  border-color: var(--stone-200);
+}
+.input-outlined-stone:focus {
+  border-color: var(--stone-500);
+}
+.input-outlined-red:hover {
+  border-color: var(--red-200);
+}
+.input-outlined-red:focus {
+  border-color: var(--red-500);
+}
+.input-outlined-orange:hover {
+  border-color: var(--orange-200);
+}
+.input-outlined-orange:focus {
+  border-color: var(--orange-500);
+}
+.input-outlined-amber:hover {
+  border-color: var(--amber-200);
+}
+.input-outlined-amber:focus {
+  border-color: var(--amber-500);
+}
+.input-outlined-yellow:hover {
+  border-color: var(--yellow-200);
+}
+.input-outlined-yellow:focus {
+  border-color: var(--yellow-500);
+}
+.input-outlined-lime:hover {
+  border-color: var(--lime-200);
+}
+.input-outlined-lime:focus {
+  border-color: var(--lime-500);
+}
+.input-outlined-green:hover {
+  border-color: var(--green-200);
+}
+.input-outlined-green:focus {
+  border-color: var(--green-500);
+}
+.input-outlined-emerald:hover {
+  border-color: var(--emerald-200);
+}
+.input-outlined-emerald:focus {
+  border-color: var(--emerald-500);
+}
+.input-outlined-teal:hover {
+  border-color: var(--teal-200);
+}
+.input-outlined-teal:focus {
+  border-color: var(--teal-500);
+}
+.input-outlined-cyan:hover {
+  border-color: var(--cyan-200);
+}
+.input-outlined-cyan:focus {
+  border-color: var(--cyan-500);
+}
+.input-outlined-sky:hover {
+  border-color: var(--sky-200);
+}
+.input-outlined-sky:focus {
+  border-color: var(--sky-500);
+}
+.input-outlined-blue:hover {
+  border-color: var(--blue-200);
+}
+.input-outlined-blue:focus {
+  border-color: var(--blue-500);
+}
+.input-outlined-indigo:hover {
+  border-color: var(--indigo-200);
+}
+.input-outlined-indigo:focus {
+  border-color: var(--indigo-500);
+}
+.input-outlined-violet:hover {
+  border-color: var(--violet-200);
+}
+.input-outlined-violet:focus {
+  border-color: var(--violet-500);
+}
+.input-outlined-purple:hover {
+  border-color: var(--purple-200);
+}
+.input-outlined-purple:focus {
+  border-color: var(--purple-500);
+}
+.input-outlined-fuchsia:hover {
+  border-color: var(--fuchsia-200);
+}
+.input-outlined-fuchsia:focus {
+  border-color: var(--fuchsia-500);
+}
+.input-outlined-rose:hover {
+  border-color: var(--rose-200);
+}
+.input-outlined-rose:focus {
+  border-color: var(--rose-500);
+}
+.input-outlined-pink:hover {
+  border-color: var(--pink-200);
+}
+.input-outlined-pink:focus {
+  border-color: var(--pink-500);
+}
