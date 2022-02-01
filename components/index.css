@@ -4,7 +4,6 @@
 /* 
 shared
 */
-
 /* variables */
 @import "./shared/variables.css";
 /* colors */
@@ -13,6 +12,8 @@ shared
 @import "./shared/image.css";
 /* animations */
 @import "./shared/animation.css";
+@import "./shared/typography.css";
+@import "./shared/effects.css";
 
 /* 
 components
@@ -20,3 +21,4 @@ components
 @import "./avatar.css";
 @import "./badge.css";
 @import "./alert.css";
+@import "./button.css";
