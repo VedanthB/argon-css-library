@@ -4,16 +4,16 @@
 /* 
 shared
 */
-/* variables */
+
 @import "./shared/variables.css";
-/* colors */
 @import "./shared/colors.css";
-/* images */
 @import "./shared/image.css";
-/* animations */
 @import "./shared/animation.css";
 @import "./shared/typography.css";
 @import "./shared/effects.css";
+@import "./shared/spacing.css";
+@import "./shared/layout.css";
+@import "./shared/borders.css";
 
 /* 
 components
@@ -22,3 +22,4 @@ components
 @import "./badge.css";
 @import "./alert.css";
 @import "./button.css";
+@import "./card.css";
