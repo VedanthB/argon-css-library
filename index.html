@@ -502,8 +502,7 @@
     <!-- star rating -->
 
     <!-- modal -->
-    <!-- The Modal -->
-    <div id="modal" class="modal">
+    <!-- <div id="modal" class="modal">
       <div class="modal-content bg-white">
         <div
           class="modal-header flex justify-between align-items-center bg-grey-800 text-white p-5"
@@ -527,36 +526,28 @@
       </div>
     </div>
 
-    <a id="modalBtn" onclick="openModal()" class="btn btn-link-sky">click me</a>
+    <a id="modalBtn" onclick="openModal()" class="btn btn-link-sky">click me</a> -->
 
     <!-- modal -->
 
+    <!-- snackbar -->
+    <div class="bg-grey-800 text-white invisible text-md" id="snackbar">
+      Click on the button to show the snackbar. It will disappear after 3
+      seconds
+    </div>
+
+    <a onclick="showSnackbar()" class="btn btn-link-sky">click me</a>
+    <!-- snackbar -->
     <script>
-      // Get the modal
-      var modal = document.getElementById("modal");
+      function showSnackbar() {
+        var x = document.getElementById("snackbar");
+        x.classList.remove("invisible");
 
-      // Get the button that opens the modal
-      // var btn = document.getElementById("modalBtn");
-
-      // // Get the <span> element that closes the modal
-      // var span = document.querySelector("modal-close");
-
-      // When the user clicks the button, open the modal
-      function openModal() {
-        modal.style.display = "block";
+        setTimeout(function () {
+          // x.classList.remove("show");
+          x.classList.add("invisible");
+        }, 5000);
       }
-
-      // When the user clicks on <span> (x), close the modal
-      function closeModal() {
-        modal.style.display = "none";
-      }
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      };
     </script>
   </body>
 </html>

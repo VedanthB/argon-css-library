@@ -27,6 +27,7 @@ components
 @import "./navigation.css";
 @import "./star-rating.css";
 @import "./modal.css";
+@import "./snackbar.css";
 
 nav::-webkit-scrollbar {
   width: 5px;
