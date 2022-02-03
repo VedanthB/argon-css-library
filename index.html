@@ -399,7 +399,8 @@
     <!-- lists -->
 
     <!-- navigation -->
-    <header>
+
+    <!-- <header>
       <nav class="bg-grey-800">
         <input id="nav-toggle" type="checkbox" />
         <a class="text-white logo">Some<strong>Logo</strong></a>
@@ -432,8 +433,8 @@
         <a href="#" class="block p-5 text-white">About</a>
         <a href="#" class="block p-5 text-white">Contact</a>
       </div>
-    </div>
-    <!-- <h1>Pure CSS Star Rating Widget</h1>
+    </div> -->
+
     <fieldset class="rating">
       <input type="radio" id="star5" name="rating" value="5" /><label
         class="full"
@@ -497,49 +498,6 @@
         for="starhalf"
         title="Sucks big time - 0.5 stars"
       ></label>
-    </fieldset> -->
-
-    <!-- Use any element to open the sidenav -->
-
-    <a class="btn m-10 btn-solid-amber shadow-lg text-white" onclick="openNav()"
-      >open sidebar nav</a
-    >
-    <a
-      class="btn m-10 btn-solid-rose shadow-lg text-white"
-      onclick="openOffNav()"
-      >open sidebar nav (off-canvas)</a
-    >
-    <a
-      class="btn m-10 btn-solid-rose shadow-lg text-white"
-      onclick="openFullNav()"
-      >open sidebar nav (full width)</a
-    >
-
-    <script>
-      /* Set the width of the side navigation to 250px */
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-      /* Open the sidenav */
-      function openFullNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-      }
-
-      function openOffNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.body.style.marginLeft = "250px";
-      }
-
-      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-      function closeOffNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.body.style.marginLeft = "0";
-      }
-
-      /* Set the width of the side navigation to 0 */
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-    </script>
+    </fieldset>
   </body>
 </html>
