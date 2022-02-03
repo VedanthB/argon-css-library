@@ -203,3 +203,12 @@
 .align-items-stretch {
   align-items: stretch;
 }
+
+/* visibility */
+
+.visible {
+  visibility: visible;
+}
+.invisible {
+  visibility: hidden;
+}
