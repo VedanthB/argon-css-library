@@ -29,16 +29,3 @@ components
 @import "./modal.css";
 @import "./snackbar.css";
 @import "./grid.css";
-
-nav::-webkit-scrollbar {
-  width: 5px;
-}
-
-nav::-webkit-scrollbar-track {
-  background-color: var(--cyan-500);
-}
-
-nav::-webkit-scrollbar-thumb {
-  background: var(--cyan-200);
-  border-radius: 25px;
-}
