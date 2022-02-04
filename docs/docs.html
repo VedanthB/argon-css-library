@@ -4,12 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="docs.css" />
+    <link rel="stylesheet" href="../styles.css" />
+
     <title>Documentation</title>
   </head>
   <body>
-    <!-- sidebar -->
+    <div class="grid">
+      <!-- header -->
+      <header class="docs-header">
+        <nav class="flex justify-between bg-grey-800">
+          <input id="nav-toggle" type="checkbox" />
+          <a class="text-white text-lg logo"
+            ><span class="text-lg text-cyan-500">Ar</span>gon</a
+          >
+          <ul class="links">
+            <li>
+              <a
+                class="text-cyan-600 text-hover-cyan-400 text-lg mr-4"
+                href="#home"
+                >Documentation</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-cyan-600 text-hover-cyan-400 flex justify-center align-items-center text-lg"
+                href="#about"
+              >
+                <i class="fab fa-github mr-2"></i>
+                Github
+              </a>
+            </li>
+          </ul>
+          <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+        </nav>
+      </header>
+      <!-- sidebar -->
 
-    <!-- pages -->
+      <nav
+        style="overflow: scroll; top: 60px; width: 20%; bottom: 92px"
+        class="h-full inline-grid docs-sidenav"
+      >
+        <ul class="flex flex-col mb-40 p-5">
+          <li class="p-1 text-lg font-normal text-cyan-500 text-hover-cyan-500">
+            Alert
+          </li>
+          <li class="p-1 text-lg font-normal text-hover-cyan-500">Buttons</li>
+          <li class="p-1 text-lg font-normal text-hover-cyan-500">Badge</li>
+          <li class="p-1 text-lg font-normal text-hover-cyan-500">Cards</li>
+          <li class="p-1 text-lg font-normal text-hover-cyan-500">Colors</li>
+          <li class="p-1 text-lg font-normal text-hover-cyan-500">Snackbar</li>
+          <li class="p-1 text-lg font-normal text-hover-cyan-500">Lists</li>
+        </ul>
+      </nav>
+
+      <!-- pages -->
+      <section
+        style="overflow-y: scroll; top: 60px; right: 0"
+        class="p-10 mt-10 docs-page"
+      ></section>
+      <!-- footer -->
+      <footer
+        style="z-index: 99; left: 0; bottom: 0"
+        class="docs-footer text-white fixed flex flex-col justify-center align-items-center w-full p-5 bg-cyan-100"
+      >
+        <div class="text-grey-700">
+          Made with
+          <span class="text-cyan-700 font-bold ml-1 mr-1">&lt;/&gt; </span> by
+          <a
+            href="#"
+            style="padding: 0; text-transform: none"
+            class="ml-1 btn btn-link-cyan"
+            >vedanth</a
+          >
+        </div>
+        <div class="flex mt-3 align-items-center justify-center">
+          <i class="fab fa-github mr-2 text-cyan-700"></i>
+          <i class="fab fa-twitter mr-2 text-cyan-700"></i>
+          <i class="fab fa-linkedin mr-2 text-cyan-700"></i>
+          <i class="fab fa-dev text-cyan-700"></i>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
