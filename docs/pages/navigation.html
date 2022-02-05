@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="../night-owl.css" />
 
-    <title>Image</title>
+    <title>Navigation</title>
 </head>
 
 <body>
@@ -73,16 +73,16 @@
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
                         <a href="cards.html"> Cards </a>
                     </li>
-                    <li class="p-1 text-lg font-normal text-cyan-500  cursor-pointer text-hover-cyan-500">
+                    <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
                         <a href="image.html"> Image </a>
                     </li>
-                    <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
                         <a href="input.html"> Input </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
                         <a href="lists.html"> Lists </a>
                     </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                    <li class="p-1 text-lg font-normal text-cyan-500  cursor-pointer text-hover-cyan-500">
                         <a href="navigation.html"> Navigation </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
@@ -121,42 +121,150 @@
             <!-- pages -->
             <section style="overflow-y: scroll; top: 3rem; width: 80%"
                 class="p-10 relative col-8-xl col-8-lg col-12-sm docs-page mb-20">
-                <h3 class="h3 font-semibold text-xl mb-5">Images</h3>
+                <h3 class="h3 font-semibold text-xl mb-5">Navigation</h3>
 
                 <h5 class="h5 font-normal text-lg mb-5">
-                    Images can be responsive to fit the parent's width, and also can be customized to be round shaped.
-
-                    You can add the class img-responsive to make your image fit the width of container. It's height will
-                    get
-                    adjusted by keeping the aspect ratio same. If you want to change the aspect ratio, you will have to
-                    crop the image. You can add class img-round to make your image round shaped.
+                    Navigation bar is used to navigate through the web apps or websites. This navigation component is
+                    responsive. It is a hamburger menu in medium and small devices
                 </h5>
 
                 <h3 class="h3 font-semibold text-xl mb-5">Examples</h3>
 
                 <div class="p-5">
-                    <div class="mb-5" style="width: 400px">
-                        <img class="img-responsive" src="https://picsum.photos/400/400" alt="random-img">
+                    <div class="mb-5">
+                        <header style="position: relative" class="docs-header">
+                            <nav class="topnav flex justify-between bg-grey-800">
+                                <input id="nav-toggle" class="invisible" type="checkbox" />
+                                <a class="text-white text-lg logo"><span class="text-lg text-cyan-500">Ar</span>gon</a>
+                                <ul class="links">
+                                    <li>
+                                        <a class="text-cyan-600 text-hover-cyan-400 text-lg mr-4"
+                                            href="#home">Documentation</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-cyan-600 text-hover-cyan-400 flex justify-center align-items-center text-lg"
+                                            href="#about">
+                                            <i class="fab fa-github mr-2"></i>
+                                            Github
+                                        </a>
+                                    </li>
+                                </ul>
+                                <label for="nav-toggle" class="icon-burger">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                </label>
+                            </nav>
+                        </header>
                     </div>
-                    <div style="width: 100px">
-                        <img class="img-responsive img-round" src="https://picsum.photos/400/400" alt="random-img">
+                    <div class="mb-5">
+                        <a class="btn m-10 btn-solid-amber shadow-lg text-white" onclick="openNav()">open sidebar
+                            nav</a>
+                        <a class="btn m-10 btn-solid-rose shadow-lg text-white" onclick="openOffNav()">open sidebar nav
+                            (off-canvas)</a>
+                        <a class="btn m-10 btn-solid-rose shadow-lg text-white" onclick="openFullNav()">open sidebar nav
+                            (full width)</a>
+
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="text-white closebtn" onclick="closeOffNav()">&times;</a>
+                            <div class="nav overflow-scroll">
+                                <a href="#" class="block p-5 text-rose-500">About</a>
+                                <a href="#" class="block p-5 text-white">Services</a>
+                                <a href="#" class="block p-5 text-white">Clients</a>
+                                <a href="#" class="block p-5 text-white">Contact</a>
+                                <a href="#" class="block p-5 text-white">About</a>
+                                <a href="#" class="block p-5 text-white">Contact</a>
+                            </div>
+                        </div>
                     </div>
+                    <script>
+                        /* Set the width of the side navigation to 250px */
+                        function openNav() {
+                            document.getElementById("mySidenav").style.width = "250px";
+                        }
+                        /* Open the sidenav */
+                        function openFullNav() {
+                            document.getElementById("mySidenav").style.width = "100%";
+                        }
+
+                        function openOffNav() {
+                            document.getElementById("mySidenav").style.width = "250px";
+                            document.body.style.marginLeft = "250px";
+                        }
+
+                        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+                        function closeOffNav() {
+                            document.getElementById("mySidenav").style.width = "0";
+                            document.body.style.marginLeft = "0";
+                        }
+
+                        /* Set the width of the side navigation to 0 */
+                        function closeNav() {
+                            document.getElementById("mySidenav").style.width = "0";
+                        }
+                    </script>
                 </div>
 
                 <pre style="max-width: 70%; background: transparent; margin: auto;">
                    <code class="html rounded-lg overflow-scroll h-full w-full">
-&lt;img class="img-responsive img-round" src="https://picsum.photos/400/400" alt="random-img">
+&lt;a class="btn m-10 btn-solid-amber shadow-lg text-white" onclick="openNav()">open sidebar
+    nav&lt;/a>
+&lt;a class="btn m-10 btn-solid-rose shadow-lg text-white" onclick="openOffNav()">open sidebar nav
+    (off-canvas)&lt;/a>
+&lt;a class="btn m-10 btn-solid-rose shadow-lg text-white" onclick="openFullNav()">open sidebar nav
+    (full width)&lt;/a>
 
-&lt;img class="img-responsive" src="https://picsum.photos/400/400" alt="random-img">
+&lt;div id="mySidenav" class="sidenav">
+    &lt;a href="javascript:void(0)" class="text-white closebtn" onclick="closeOffNav()">&times;&lt;/a>
+    &lt;div class="nav overflow-scroll">
+        &lt;a href="#" class="block p-5 text-rose-500">About&lt;/a>
+        &lt;a href="#" class="block p-5 text-white">Services&lt;/a>
+        &lt;a href="#" class="block p-5 text-white">Clients&lt;/a>
+        &lt;a href="#" class="block p-5 text-white">Contact&lt;/a>
+        &lt;a href="#" class="block p-5 text-white">About&lt;/a>
+        &lt;a href="#" class="block p-5 text-white">Contact&lt;/a>
+    &lt;/div>
+&lt;/div> 
                    </code>
                 </pre>
 
+                <h5 class="h5 text-lg"> javascript </h5>
+
+                <pre style="max-width: 70%; background: transparent; margin: auto;">
+                    <code class="javascript rounded-lg overflow-scroll h-full w-full">
+/* Set the width of the side navigation to 250px */
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+/* Open the sidenav */
+function openFullNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function openOffNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.body.style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeOffNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.body.style.marginLeft = "0";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+ document.getElementById("mySidenav").style.width = "0";
+} 
+                    </code>
+                 </pre>
+
 
                 <div class="page-footer flex justify-between">
-                    <a href="cards.html" class="btn btn-link-cyan">
-                        Cards
+                    <a href="list.html" class="btn btn-link-cyan">
+                        Lists
                     </a>
-                    <a href="input.html" class="btn btn-link-cyan"> Input </a>
+                    <a href="modal.html" class="btn btn-link-cyan"> Modal </a>
                 </div>
 
             </section>

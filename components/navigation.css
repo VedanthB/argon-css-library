@@ -1,9 +1,9 @@
 .topnav {
-  position: fixed;
+  position: absolute;
   z-index: 10;
   left: 0;
-  right: 0;
   top: 0;
+  width: 100%;
   padding: 0 5%;
   height: 3rem;
 }
@@ -54,7 +54,7 @@
     z-index: 9999;
     left: 0;
     right: 0;
-    top: 60px;
+    top: 3rem;
     bottom: 100%;
     width: auto;
     height: auto;
@@ -89,8 +89,8 @@
   height: 100%;
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed;
-  z-index: 1;
-  top: 10px;
+  z-index: 9999;
+  top: 0px;
   left: 0;
   background-color: #111; /* Black*/
   overflow-x: hidden;
