@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../docs.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../night-owl.css" />
+
+    <title>Buttons</title>
+</head>
+
+<body>
+    <div class="flex flex-row">
+        <!-- header -->
+        <header class="docs-header">
+            <nav class="topnav flex justify-between bg-grey-800">
+                <input id="nav-toggle" type="checkbox" />
+                <a class="text-white text-lg logo"><span class="text-lg text-cyan-500">Ar</span>gon</a>
+                <ul class="links">
+                    <li>
+                        <a class="text-cyan-600 text-hover-cyan-400 text-lg mr-4" href="#home">Documentation</a>
+                    </li>
+                    <li>
+                        <a class="text-cyan-600 text-hover-cyan-400 flex justify-center align-items-center text-lg"
+                            href="#about">
+                            <i class="fab fa-github mr-2"></i>
+                            Github
+                        </a>
+                    </li>
+                </ul>
+                <label for="nav-toggle" class="icon-burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label>
+            </nav>
+        </header>
+
+        <div style="min-height: 90vh" class="w-full justify-end flex">
+            <!-- sidebar -->
+            <nav style="overflow: scroll; top: 3rem; width: 20%; bottom: 92px"
+                class="h-full relative docs-sidenav col-4-xl col-4-lg">
+                <ul class="flex flex-col mb-40 p-5">
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="../docs.html">Getting Started</a>
+                    </li>
+                    <li class="p-1 text-xl text-grey-700 mt-5 font-semibold">
+                        <a> Components </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="alert.html"> Alert </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
+                        <a href="avatar.html"> Avatar </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
+                        <a href="badge.html"> Badge </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal text-cyan-500 cursor-pointer text-hover-cyan-500">
+                        <a href="button.html"> Button </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="cards.html"> Cards </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href=image.html"> Image </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="input.html"> Input </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="lists.html"> Lists </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="navigation.html"> Navigation </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="modal.html"> Modal </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="star-rating.html"> Star Rating </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="snackbar.html">Snackbar </a>
+                    </li>
+                    <li class="p-1 mt-5 text-xl text-grey-700 font-semibold">
+                        Other Utilities
+                    </li>
+
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="grid-system.html"> Grid System </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="spacing-html"> Spacing </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="animation.html"> Animation </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="colors.html"> Colors </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="effects.html"> Effects </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="typography.html"> Typography </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- pages -->
+            <section style="overflow-y: scroll; top: 3rem; width: 80%"
+                class="p-10 relative col-8-xl col-8-lg col-12-sm docs-page mb-20">
+                <h3 class="h3 font-semibold text-xl mb-5">Buttons</h3>
+
+                <h5 class="h5 font-normal text-lg mb-5">
+                    Buttons are also called as call to action. We have range of buttons and their states. You may use a
+                    tag or button element, you just need to add the respective classes, and you are good to go.
+                </h5>
+
+                <h3 class="h3 font-semibold text-xl mb-5">Examples</h3>
+
+                <div class="p-5">
+                    <div class="flex justify-start align-items-center mb-6">
+                        <a href="#" class="btn mr-1">default btn</a>
+                        <a href="#" class="btn btn-solid-pink text-white mr-1">Click Me</a>
+                        <a href="#" class="btn btn-solid-rose text-white mr-1">
+                            <span class="button-text mr-1">Click Me</span>
+                        </a>
+                        <a href="#" class="btn btn-solid-fuchsia shadow-sm text-white mr-1">Click Me</a>
+                        <a href="#" class="btn btn-solid-purple shadow-md text-white mr-1">Click Me</a>
+                        <a href="#" class="btn btn-solid-amber shadow-lg text-white mr-1">Click Me</a>
+                        <a href="#" class="btn btn-solid-violet shadow-xl text-white mr-1">Click Me</a>
+                        <a href="#" class="btn btn-solid-blue text-white mr-1">Click Me</a>
+
+                    </div>
+
+                    <div class="flex justify-start align-items-center mb-6">
+                        <a href="#" class="btn btn-solid-sky text-white mr-1">Click Me</a>
+                        <a href="#" class="btn btn-solid-cyan text-white mr-1">Click Me</a>
+                        <a href="#" class="btn btn-solid-teal text-white mr-1">Click Me</a>
+                        <a href="#" class="btn btn-solid-red text-white mr-1">Click Me</a>
+                        <a href="#" class="btn bg-pink-700 text-white">Click Me</a>
+                    </div>
+
+                    <div class="flex justify-start align-items-center mb-6">
+                        <a href="#" class="btn shadow-md btn-outline-pink mr-1">Click Me</a>
+                        <a href="#" class="btn shadow-md btn-outline-rose mr-1">Click Me</a>
+                        <a href="#" class="btn shadow-md btn-outline-fuchsia mr-1">Click Me</a>
+                        <a href="#" class="btn shadow-md btn-outline-purple mr-1">Click Me</a>
+                        <a href="#" class="btn shadow-md btn-outline-amber">Click Me</a>
+                    </div>
+
+                    <div class="flex justify-start align-items-center mb-6">
+                        <a href="#" class="btn btn-outline-violet mr-1">Click Me</a>
+                        <a href="#" class="btn btn-outline-blue mr-1">Click Me</a>
+                        <a href="#" class="btn btn-outline-sky mr-1">Click Me</a>
+                        <a href="#" class="btn btn-outline-cyan mr-1">Click Me</a>
+                        <a href="#" class="btn btn-outline-teal mr-1">Click Me</a>
+                        <a href="#" class="btn btn-outline-red mr-1">Click Me</a>
+                        <a href="#" class="btn btn-outline-cyan mr-1">Click Me</a>
+                        <a href="#" class="btn btn-outline-teal mr-1">Click Me</a>
+                    </div>
+
+                    <div class="flex justify-start align-items-center mb-6">
+                        <a href="#" class="btn btn-link-pink mr-1">Click Me</a>
+                        <a href="#" class="btn btn-link-rose mr-1">Click Me</a>
+                        <a href="#" class="btn btn-link-fuchsia mr-1">Click Me</a>
+                        <a href="#" class="btn btn-link-purple mr-1">Click Me</a>
+                        <a href="#" class="btn btn-link-amber mr-1">Click Me</a>
+                    </div>
+
+                    <div class="flex justify-start align-items-center mb-6">
+                        <a href="#" class="btn btn-link-violet mr-1">Click Me</a>
+                        <a href="#" class="btn btn-link-blue mr-1">Click Me</a>
+                        <a href="#" class="btn btn-link-sky mr-1">Click Me</a>
+                        <a href="#" class="btn btn-link-cyan mr-1">Click Me</a>
+                        <a href="#" class="btn btn-link-teal mr-1">Click Me</a>
+                        <a href="#" class="btn btn-link-red mr-1">Click Me</a>
+                        <a href="#" class="btn btn-link-cyan mr-1">Click Me</a>
+                        <a href="#" class="btn btn-link-teal">Click Me</a>
+                    </div>
+
+                    <div class="flex justify-start align-items-center mb-6">
+                        <a class="bg-blue-500 text-white btn-float-action  mr-1"><i class="fas fa-plus"></i></a>
+                        <label class="btn-toggle"><input class="btn-checkbox" type="checkbox" />
+                            <span class="btn-slider-round"></span>
+                        </label>
+
+                        <a class="btn text-rose-500 text-hover-rose-400  mr-1">
+                            <span><i class="fas fa-shopping-cart"></i></span>
+                        </a>
+                        <a href="#" class="btn btn-solid-rose text-white">
+                            <span>
+                                <i class="btn-icon fas fa-shopping-cart"></i>
+                            </span>Add to Cart
+                        </a>
+                    </div>
+                </div>
+
+                <pre style="max-width: 70%; background: transparent; margin: auto;">
+                   <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;a href="#" class="btn">default btn&lt;/a>
+&lt;a href="#" class="btn btn-solid-pink text-white">Pink Button&lt;/a>
+&lt;a href="#" class="btn btn-solid-rose text-white btn-lg">
+    &lt;span class="button-text">Rose Solid Button&lt;/span>
+&lt;/a>
+&lt;a href="#" class="btn btn-sm btn-solid-fuchsia shadow-sm text-white">click me&lt;/a>
+&lt;a href="#" class="btn btn-solid-purple shadow-md text-white btn-lg">click me&lt;/a>
+&lt;a href="#" class="btn btn-solid-amber shadow-lg text-white"> btn&lt;/a>
+&lt;a href="#" class="btn btn-solid-violet shadow-xl text-white">click me&lt;/a>
+&lt;a href="#" class="btn btn-solid-blue text-white">click me&lt;/a>
+&lt;a href="#" class="btn btn-solid-sky text-white">click me&lt;/a>
+&lt;a href="#" class="btn btn-solid-cyan text-white">click me&lt;/a>
+&lt;a href="#" class="btn btn-solid-teal text-white">click me&lt;/a>
+&lt;a href="#" class="btn btn-solid-red text-white">click me&lt;/a>
+&lt;a href="#" class="btn bg-pink-700 text-white">click me&lt;/a>
+
+&lt;!-- outline buttons -->
+
+&lt;a href="#" class="btn shadow-md btn-outline-pink">Pink Button&lt;/a>
+&lt;a href="#" class="btn shadow-md btn-outline-rose">Rose Button&lt;/a>
+&lt;a href="#" class="btn shadow-md btn-outline-fuchsia">click me&lt;/a>
+&lt;a href="#" class="btn shadow-md btn-outline-purple">click me&lt;/a>
+&lt;a href="#" class="btn shadow-md btn-outline-amber"> btn&lt;/a>
+&lt;a href="#" class="btn shadow-md btn-outline-violet">click me&lt;/a>
+&lt;a href="#" class="btn shadow-md btn-outline-blue">click me&lt;/a>
+&lt;a href="#" class="btn btn-outline-sky">click me&lt;/a>
+&lt;a href="#" class="btn btn-outline-cyan">click me&lt;/a>
+&lt;a href="#" class="btn btn-outline-teal">click me&lt;/a>
+&lt;a href="#" class="btn btn-outline-red">click me&lt;/a>
+
+&lt;!-- link buttons -->
+
+&lt;a href="#" class="btn btn-link-pink">Pink Button&lt;/a>
+&lt;a href="#" class="btn btn-link-rose">Rose Button&lt;/a>
+&lt;a href="#" class="btn btn-link-fuchsia">click me&lt;/a>
+&lt;a href="#" class="btn btn-link-purple">click me&lt;/a>
+&lt;a href="#" class="btn btn-link-amber"> btn&lt;/a>
+&lt;a href="#" class="btn btn-link-violet">click me&lt;/a>
+&lt;a href="#" class="btn btn-link-blue">click me&lt;/a>
+&lt;a href="#" class="btn btn-link-sky">click me&lt;/a>
+&lt;a href="#" class="btn btn-link-cyan">click me&lt;/a>
+&lt;a href="#" class="btn btn-link-teal">click me&lt;/a>
+&lt;a href="#" class="btn btn-link-red">click me&lt;/a>
+&lt;a href="#" class="btn btn-link-cyan">click me&lt;/a>
+&lt;a href="#" class="btn btn-link-teal">click me&lt;/a>
+
+&lt;!-- toggle and Floating Action Buttons -->
+
+&lt;a class="bg-blue-500 text-white btn-float-action">&lt;i class="fas fa-plus">&lt;/i>&lt;/a>
+&lt;label class="btn-toggle">
+    &lt;input class="btn-checkbox" type="checkbox" />
+    &lt;span class="btn-slider-round">&lt;/span>
+&lt;/label>
+
+&lt;a class="btn text-rose-500 text-hover-rose-400">
+    &lt;span>&lt;i class="fas fa-shopping-cart">&lt;/i>&lt;/span>
+&lt;/a>
+&lt;a href="#" class="btn btn-solid-rose text-white">
+    &lt;span>&lt;i class="btn-icon fas fa-shopping-cart">&lt;/i>&lt;/span>
+    Add to Cart
+&lt;/a>
+                   </code>
+                </pre>
+
+
+                <div class="page-footer flex justify-between">
+                    <a href="badge.htmll" class="btn btn-link-cyan">
+                        Badge
+                    </a>
+                    <a href="cards.html" class="btn btn-link-cyan"> Cards </a>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- footer -->
+        <footer style="bottom: 0"
+            class="docs-footer text-white fixed flex flex-col justify-center align-items-center w-full p-5 z-50 bg-cyan-100">
+            <div class="text-grey-700">
+                Made with
+                <span class="text-cyan-700 font-bold ml-1 mr-1">&lt;/&gt; </span> by
+                <a href="#" style="padding: 0; text-transform: none" class="ml-1 btn btn-link-cyan">vedanth</a>
+            </div>
+            <div class="flex mt-3 align-items-center justify-center">
+                <i class="fab fa-github mr-2 text-cyan-700"></i>
+                <i class="fab fa-twitter mr-2 text-cyan-700"></i>
+                <i class="fab fa-linkedin mr-2 text-cyan-700"></i>
+                <i class="fab fa-dev text-cyan-700"></i>
+            </div>
+        </footer>
+    </div>
+    <script src="../highlight.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>
