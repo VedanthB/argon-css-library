@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="../night-owl.css" />
 
-    <title>Image</title>
+    <title>List</title>
 </head>
 
 <body>
@@ -76,11 +76,11 @@
                     <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
                         <a href="image.html"> Image </a>
                     </li>
-                    <li class="p-1 text-lg font-normal text-cyan-500 cursor-pointer text-hover-cyan-500">
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
                         <a href="input.html"> Input </a>
                     </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="lists.html"> Lists </a>
+                    <li class="p-1 text-lg font-normal text-cyan-500 cursor-pointer text-hover-cyan-500">
+                        <a href="list.html"> Lists </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
                         <a href="navigation.html"> Navigation </a>
@@ -121,42 +121,127 @@
             <!-- pages -->
             <section style="overflow-y: scroll; top: 3rem; width: 80%"
                 class="p-10 relative col-8-xl col-8-lg col-12-sm docs-page mb-20">
-                <h3 class="h3 font-semibold text-xl mb-5">Images</h3>
+                <h3 class="h3 font-semibold text-xl mb-5">Lists</h3>
 
                 <h5 class="h5 font-normal text-lg mb-5">
-                    Images can be responsive to fit the parent's width, and also can be customized to be round shaped.
-
-                    You can add the class img-responsive to make your image fit the width of container. It's height will
-                    get
-                    adjusted by keeping the aspect ratio same. If you want to change the aspect ratio, you will have to
-                    crop the image. You can add class img-round to make your image round shaped.
+                    Lists can be used at many places like navigation bar, stacked notifications, article pages, etc.
                 </h5>
 
                 <h3 class="h3 font-semibold text-xl mb-5">Examples</h3>
 
                 <div class="p-5">
-                    <div class="mb-5" style="width: 400px">
-                        <img class="img-responsive" src="https://picsum.photos/400/400" alt="random-img">
+                    <div class="mb-2">
+                        <ul class="w-72">
+                            <li class="text-lg p-4 m-1 bg-grey-100">
+                                <i class="text-grey-500 btn-icon fas fa-shopping-cart"></i>
+                                this is a list normal
+                            </li>
+                            <li class="text-lg p-4 m-1 bg-grey-100">this is a list normal</li>
+                            <li class="text-lg p-4 m-1 bg-grey-100">this is a list normal</li>
+                        </ul>
                     </div>
-                    <div style="width: 100px">
-                        <img class="img-responsive img-round" src="https://picsum.photos/400/400" alt="random-img">
+                    <div class="mb-2">
+                        <ul class="flex flex-row">
+                            <li class="text-lg p-4 m-1 bg-grey-100">
+                                <i class="text-grey-500 btn-icon fas fa-shopping-cart"></i>
+                                Some this is a list normal
+                            </li>
+                            <li class="text-lg p-4 m-1 bg-grey-100">this is a list normal</li>
+                            <li class="text-lg p-4 m-1 bg-grey-100">this is a list normal</li>
+                        </ul>
+                    </div>
+
+                    <div style="width: 600px" class="test-2">
+                        <ul>
+                            <li class="flex text-lg p-5 m-1 bg-grey-100">
+                                <div class="avatar avatar-sm">
+                                    <img src="/components/images/avatar-img.jpeg" alt="avatar-img"
+                                        class="img-round img-responsive" />
+                                </div>
+                                <div class="ml-5 flex flex-col text-overflow-truncate">
+                                    <h5 class="text-xl font-semibold">Bella</h5>
+                                    <p class="subtitle2 font-light text-md">
+                                        This is some text hdjsbdjbs sjndjsd jnjsnd sdjnsjdnsdjsdjnsdknsd
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="flex text-lg p-5 m-1 bg-grey-100">
+                                <div class="avatar avatar-sm">
+                                    <img src="/components/images/avatar-img.jpeg" alt="avatar-img"
+                                        class="img-round img-responsive" />
+                                </div>
+                                <div class="ml-5 flex flex-col text-overflow-truncate">
+                                    <h5 class="text-xl font-semibold">Bella</h5>
+                                    <p class="subtitle2 font-light text-md">
+                                        This is some text hdjsbdjbs sjndjsd jnjsnd sdjnsjdnsdjsdjnsdknsd
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
                 <pre style="max-width: 70%; background: transparent; margin: auto;">
                    <code class="html rounded-lg overflow-scroll h-full w-full">
-&lt;img class="img-responsive img-round" src="https://picsum.photos/400/400" alt="random-img">
+&lt;div class="mb-2">
+    &lt;ul class="w-72">
+        &lt;li class="text-lg p-4 m-1">
+            &lt;i class="text-grey-500 btn-icon fas fa-shopping-cart">&lt;/i>
+            this is a list normal
+        &lt;/li>
+        &lt;li class="text-lg p-4 m-1">this is a list normal&lt;/li>
+        &lt;li class="text-lg p-4 m-1">this is a list normal&lt;/li>
+    &lt;/ul>
+&lt;/div>
 
-&lt;img class="img-responsive" src="https://picsum.photos/400/400" alt="random-img">
+&lt;div class="mb-2">
+    &lt;ul class="flex flex-row">
+        &lt;li class="text-lg p-4 m-1">
+            &lt;i class="text-grey-500 btn-icon fas fa-shopping-cart">&lt;/i>
+            Some this is a list normal
+        &lt;/li>
+        &lt;li class="text-lg p-4 m-1">this is a list normal&lt;/li>
+        &lt;li class="text-lg p-4 m-1">this is a list normal&lt;/li>
+    &lt;/ul>
+&lt;/div>
+
+&lt;div style="width: 600px" class="test-2">
+    &lt;ul>
+        &lt;li class="flex text-lg p-5 m-1 bg-teal-100">
+            &lt;div class="avatar avatar-sm">
+                &lt;img src="components/images/avatar-img.jpeg" alt="avatar-img" 
+                    class="img-round img-responsive" />
+            &lt;/div>
+            &lt;div class="ml-5 flex flex-col text-overflow-truncate">
+                &lt;h5 class="text-xl font-semibold">Bella&lt;/h5>
+                &lt;p class="subtitle2 font-light text-md">
+                    This is some text hdjsbdjbs sjndjsd jnjsnd sdjnsjdnsdjsdjnsdknsd
+                &lt;/p>
+            &lt;/div>
+        &lt;/li>
+        &lt;li class="flex text-lg p-5 m-1 bg-teal-100">
+            &lt;div class="avatar avatar-sm">
+                &lt;img src="components/images/avatar-img.jpeg" alt="avatar-img" 
+                    class="img-round img-responsive" />
+            &lt;/div>
+            &lt;div class="ml-5 flex flex-col text-overflow-truncate">
+                &lt;h5 class="text-xl font-semibold">Bella&lt;/h5>
+                &lt;p class="subtitle2 font-light text-md">
+                    This is some text hdjsbdjbs sjndjsd jnjsnd sdjnsjdnsdjsdjnsdknsd
+                &lt;/p>
+            &lt;/div>
+        &lt;/li>
+    &lt;/ul>
+&lt;/div>
                    </code>
                 </pre>
 
 
                 <div class="page-footer flex justify-between">
-                    <a href="cards.html" class="btn btn-link-cyan">
-                        Cards
+                    <a href="input.html" class="btn btn-link-cyan">
+                        Input
                     </a>
-                    <a href="input.html" class="btn btn-link-cyan"> Input </a>
+                    <a href="input.html" class="btn btn-link-cyan"> Navigation </a>
                 </div>
 
             </section>
