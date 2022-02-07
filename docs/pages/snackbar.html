@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="../night-owl.css" />
 
-    <title>Star Rating</title>
+    <title>Image</title>
 </head>
 
 <body>
@@ -80,7 +80,7 @@
                         <a href="input.html"> Input </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="lists.html"> Lists </a>
+                        <a href="list.html"> Lists </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
                         <a href="navigation.html"> Navigation </a>
@@ -88,10 +88,10 @@
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
                         <a href="modal.html"> Modal </a>
                     </li>
-                    <li class="p-1 text-lg font-normal text-cyan-500 cursor-pointer text-hover-cyan-500">
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
                         <a href="star-rating.html"> Star Rating </a>
                     </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                    <li class="p-1 text-lg font-normal text-cyan-500  cursor-pointer text-hover-cyan-500">
                         <a href="snackbar.html">Snackbar </a>
                     </li>
                     <li class="p-1 mt-5 text-xl text-grey-700 font-semibold">
@@ -121,73 +121,70 @@
             <!-- pages -->
             <section style="overflow-y: scroll; top: 3rem; width: 80%"
                 class="p-10 relative col-8-xl col-8-lg col-12-sm docs-page mb-20">
-                <h3 class="h3 font-semibold text-xl mb-5">Ratings</h3>
+                <h3 class="h3 font-semibold text-xl mb-5">Snackbar</h3>
 
                 <h5 class="h5 font-normal text-lg mb-5">
-                    Rating components can be used as read-only badge or in reviews section. Can be used in reviews
-                    section as form too.
+                    Snackbars inform users of a process that an app has performed or will perform. They appear
+                    temporarily, towards the bottom of the screen. They shouldn't interrupt the user experience, and
+                    they don't require user input to disappear.
+
+                    Snackbars contain a single line of text directly related to the operation performed. They may
+                    contain a text action, but no icons. You can use them to display notifications.
                 </h5>
 
                 <h3 class="h3 font-semibold text-xl mb-5">Examples</h3>
 
-                <div class="p-5 mb-5">
-                    <fieldset class="rating">
-                        <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5"
-                            title="Awesome - 5 stars"></label>
-                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half"
-                            for="star4half" title="Pretty good - 4.5 stars"></label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4"
-                            title="Pretty good - 4 stars"></label>
-                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half"
-                            for="star3half" title="Meh - 3.5 stars"></label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3"
-                            title="Meh - 3 stars"></label>
-                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half"
-                            for="star2half" title="Kinda bad - 2.5 stars"></label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2"
-                            title="Kinda bad - 2 stars"></label>
-                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half"
-                            for="star1half" title="Meh - 1.5 stars"></label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1"
-                            title="Sucks big time - 1 star"></label>
-                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half"
-                            for="starhalf" title="Sucks big time - 0.5 stars"></label>
-                    </fieldset>
+                <div class="p-5">
+                    <div class="bg-grey-800 text-white invisible text-md" id="snackbar">
+                        Click on the button to show the snackbar. It will disappear after 3
+                        seconds
+                    </div>
+
+                    <a onclick="showSnackbar()" class="btn btn-link-sky">click me</a>
+
+                    <script>
+                        function showSnackbar() {
+                            var x = document.getElementById("snackbar");
+                            x.classList.remove("invisible");
+
+                            setTimeout(function () {
+                                // x.classList.remove("show");
+                                x.classList.add("invisible");
+                            }, 5000);
+                        }
+                    </script>
                 </div>
 
                 <pre style="max-width: 70%; background: transparent; margin: auto;">
                    <code class="html rounded-lg overflow-scroll h-full w-full">
-&lt;fieldset class="rating">
-    &lt;input type="radio" id="star5" name="rating" value="5" />&lt;label class="full" for="star5"
-        title="Awesome - 5 stars">&lt;/label>
-    &lt;input type="radio" id="star4half" name="rating" value="4 and a half" />&lt;label class="half"
-        for="star4half" title="Pretty good - 4.5 stars">&lt;/label>
-    &lt;input type="radio" id="star4" name="rating" value="4" />&lt;label class="full" for="star4"
-        title="Pretty good - 4 stars">&lt;/label>
-    &lt;input type="radio" id="star3half" name="rating" value="3 and a half" />&lt;label class="half"
-        for="star3half" title="Meh - 3.5 stars">&lt;/label>
-    &lt;input type="radio" id="star3" name="rating" value="3" />&lt;label class="full" for="star3"
-        title="Meh - 3 stars">&lt;/label>
-    &lt;input type="radio" id="star2half" name="rating" value="2 and a half" />&lt;label class="half"
-        for="star2half" title="Kinda bad - 2.5 stars">&lt;/label>
-    &lt;input type="radio" id="star2" name="rating" value="2" />&lt;label class="full" for="star2"
-        title="Kinda bad - 2 stars">&lt;/label>
-    &lt;input type="radio" id="star1half" name="rating" value="1 and a half" />&lt;label class="half"
-        for="star1half" title="Meh - 1.5 stars">&lt;/label>
-    &lt;input type="radio" id="star1" name="rating" value="1" />&lt;label class="full" for="star1"
-        title="Sucks big time - 1 star">&lt;/label>
-    &lt;input type="radio" id="starhalf" name="rating" value="half" />&lt;label class="half"
-        for="starhalf" title="Sucks big time - 0.5 stars">&lt;/label>
-&lt;/fieldset>
+&lt;div class="bg-grey-800 text-white invisible text-md" id="snackbar">
+    Click on the button to show the snackbar. It will disappear after 3
+    seconds
+&lt;/div>
+
+&lt;a onclick="showSnackbar()" class="btn btn-link-sky">click me&lt;/a>
                    </code>
                 </pre>
+                <pre style="max-width: 70%; background: transparent; margin: auto;">
+                    <code class="javascript rounded-lg overflow-scroll h-full w-full">
+function showSnackbar() {
+var x = document.getElementById("snackbar");
+x.classList.remove("invisible");
+
+setTimeout(function () {
+
+x.classList.add("invisible");
+}, 5000);
+}
+                    </code>
+                 </pre>
 
 
                 <div class="page-footer flex justify-between">
-                    <a href="modal.html" class="btn btn-link-cyan">
-                        Modal
+                    <a href="star-rating.html" class="btn btn-link-cyan">
+                        Star rating
                     </a>
-                    <a href="snackbar.html" class="btn btn-link-cyan"> Snackbar </a>
+                    <a href="grid-system.html" class="btn btn-link-cyan"> Grid System</a>
                 </div>
 
             </section>
