@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="../night-owl.css" />
 
-    <title>Avatar</title>
+    <title>Alerts</title>
 </head>
 
 <body>
@@ -49,72 +49,74 @@
 
         <div style="min-height: 90vh" class="w-full justify-end flex">
             <!-- sidebar -->
-            <nav style="overflow: scroll; top: 3rem; width: 20%; bottom: 92px"
-                class="h-full relative docs-sidenav col-4-xl col-4-lg">
+            <nav style="top: 3rem; width: 20%; bottom: 0" class="h-full relative docs-sidenav pl-10 col-4-xl col-4-lg">
                 <ul class="flex flex-col mb-40 p-5">
+                    <!-- getting started -->
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="../docs.html">Getting Started</a>
+                        <a href="/docs/docs.html">Getting Started</a>
                     </li>
+                    <li class="p-1 text-lg font-normal   cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/colors.html"> Colors </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/spacing.html"> Spacing </a>
+                    </li>
+                    <!-- components -->
                     <li class="p-1 text-xl text-grey-700 mt-5 font-semibold">
                         <a> Components </a>
                     </li>
                     <li class="p-1 text-lg font-normal text-cyan-500 cursor-pointer text-hover-cyan-500">
-                        <a href="alert.html"> Alert </a>
+                        <a href="/docs/pages/alert.html"> Alert </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="avatar.html"> Avatar </a>
+                        <a href="/docs/pages/avatar.html"> Avatar </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="badge.html"> Badge </a>
+                        <a href="/docs/pages/badge.html"> Badge </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="button.html"> Button </a>
+                        <a href="/docs/pages/button.html"> Button </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="cards.html"> Cards </a>
+                        <a href="/docs/pages/cards.html"> Cards </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href=image.html"> Image </a>
+                        <a href="/docs/pages/image.html"> Image </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="input.html"> Input </a>
+                        <a href="/docs/pages/input.html"> Input </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="lists.html"> Lists </a>
+                        <a href="/docs/pages/list.html"> Lists </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="navigation.html"> Navigation </a>
+                        <a href="/docs/pages/navigation.html"> Navigation </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="modal.html"> Modal </a>
+                        <a href="/docs/pages/modal.html"> Modal </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="star-rating.html"> Star Rating </a>
+                        <a href="/docs/pages/star-rating.html"> Star Rating </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="snackbar.html">Snackbar </a>
+                        <a href="/docs/pages/snackbar.html">Snackbar </a>
                     </li>
+                    <!-- extra utilities -->
                     <li class="p-1 mt-5 text-xl text-grey-700 font-semibold">
                         Other Utilities
                     </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/grid-system.html"> Grid System </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/animation.html"> Animation </a>
+                    </li>
 
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="grid-system.html"> Grid System </a>
+                        <a href="/docs/pages/effects.html"> Effects </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="spacing.html"> Spacing </a>
-                    </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="animation.html"> Animation </a>
-                    </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="colors.html"> Colors </a>
-                    </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="effects.html"> Effects </a>
-                    </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="typography.html"> Typography </a>
+                        <a href="/docs/pages/typography.html"> Typography </a>
                     </li>
                 </ul>
             </nav>
@@ -123,18 +125,12 @@
                 class="p-10 relative col-8-xl col-8-lg col-12-sm docs-page mb-20">
                 <h3 class="h3 font-semibold text-xl mb-5">Alerts</h3>
 
-                <h5 class="h5 font-normal text-lg">
+                <h5 class="h5 font-normal text-lg mb-10">
                     An alert displays a short, important message in a way that attracts
                     the user's attention without interrupting the user's task.
                 </h5>
 
-                <h6 class="h6 font-normal text-lg mb-10">
-                    Get started Even with the same color palette and sizing scale, it's
-                    easy to build the same component with a completely different look in
-                    the next project.
-                </h6>
-
-                <h3 class="h3 font-semibold text-xl mb-5">Examples</h3>
+                <h3 class="h3 font-semibold text-xl">Examples</h3>
 
 
                 <div class="p-5">
@@ -171,36 +167,37 @@
 
                 <pre style="max-width: 70%; background: transparent; margin: auto;">
                    <code class="html rounded-lg overflow-scroll h-full w-full">
+ <!-- primary alert example  -->
 &lt;div class="alert-box bg-cyan-200 text-cyan-800">
     A primary alert example with a text link
     &lt;a class="link-text">Text Link&lt;/a>
 &lt;/div>
 
-
+ <!-- secondary alert example  -->
 &lt;div class="alert-box bg-sky-300 text-sky-800">
     A secondary alert example!!!!
 &lt;/div>
 
-
+ <!-- success alert example  -->
 &lt;div class="alert-box bg-green-200 text-green-800">
     &lt;span>&lt;i class="alert-icon fas fa-check-circle">&lt;/i>&lt;/span>
     A success alert example: order placed
 &lt;/div>
 
-
+ <!-- danger alert example  -->
 &lt;div class="alert-box bg-red-200 text-red-800">
     &lt;span>&lt;i class="alert-icon fas fa-exclamation-triangle">&lt;/i>&lt;/span>
     A danger alert example: Are you sure you want to delete the account
     permanently?
 &lt;/div>
 
-
+ <!-- warning alert example  -->
 &lt;div class="alert-box bg-yellow-200 text-yellow-800">
     &lt;span>&lt;i class="alert-icon fas fa-exclamation-triangle">&lt;/i>&lt;/span>
     A warning alert example: Fill all the fields before submitting
 &lt;/div>
 
-
+ <!-- warning with button alert example  -->
 &lt;div class="alert-box bg-orange-200 text-orange-800" id="alert-example-close">
   &lt;span>
       &lt;i class="alert-icon fas fa-exclamation-triangle">&lt;/i> 
@@ -213,10 +210,10 @@
 
 
                 <div class="page-footer flex justify-between">
-                    <a href="../docs.html" class="btn btn-link-cyan">
-                        Getting Started
+                    <a href="/docs/pages/spacing.html" class="btn btn-link-cyan">
+                        Spacing
                     </a>
-                    <a href="avatar.html" class="btn btn-link-cyan"> Avatar </a>
+                    <a href="/docs/pages/avatar.html" class="btn btn-link-cyan"> Avatar </a>
                 </div>
 
             </section>

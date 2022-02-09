@@ -22,6 +22,7 @@
 
 <body>
   <div class="flex flex-row">
+
     <!-- header -->
     <header class="docs-header">
       <nav class="topnav flex justify-between bg-grey-800">
@@ -46,74 +47,78 @@
       </nav>
     </header>
 
+
     <!-- main (sidebar and page) -->
-    <div style="min-height: 95vh" class="w-full justify-end flex">
+    <div style="min-height: 90vh" class="w-full justify-end flex">
       <!-- sidebar -->
-      <nav style="overflow: scroll; top: 60px; width: 20%; bottom: 92px" class="h-full docs-sidenav col-4-xl col-4-lg">
+      <nav style="top: 3rem; width: 20%; bottom: 0" class="h-full relative docs-sidenav pl-10 col-4-xl col-4-lg">
         <ul class="flex flex-col mb-40 p-5">
-          <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500 text-hover-cyan-500">
-            <a href="">Getting Started</a>
+          <!-- getting started -->
+          <li class="p-1 text-lg font-normal text-cyan-500 cursor-pointer text-hover-cyan-500">
+            <a href="/docs/docs.html">Getting Started</a>
           </li>
+          <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+            <a href="/docs/pages/colors.html"> Colors </a>
+          </li>
+          <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
+            <a href="/docs/pages/spacing.html"> Spacing </a>
+          </li>
+          <!-- components -->
           <li class="p-1 text-xl text-grey-700 mt-5 font-semibold">
-            <a href="docs.html"> Components </a>
+            <a> Components </a>
           </li>
           <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href="pages/alert.html"> Alert </a>
+            <a href="/docs/pages/alert.html"> Alert </a>
           </li>
           <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Avatar </a>
+            <a href="/docs/pages/avatar.html"> Avatar </a>
           </li>
           <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Badge </a>
+            <a href="/docs/pages/badge.html"> Badge </a>
           </li>
           <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Button </a>
+            <a href="/docs/pages/button.html"> Button </a>
           </li>
           <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Cards </a>
+            <a href="/docs/pages/cards.html"> Cards </a>
           </li>
           <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Image </a>
+            <a href="/docs/pages/image.html"> Image </a>
           </li>
           <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Input </a>
+            <a href="/docs/pages/input.html"> Input </a>
           </li>
           <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Lists </a>
+            <a href="/docs/pages/list.html"> Lists </a>
           </li>
           <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Navigation </a>
+            <a href="/docs/pages/navigation.html"> Navigation </a>
           </li>
           <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Modal </a>
+            <a href="/docs/pages/modal.html"> Modal </a>
           </li>
           <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Star Rating </a>
+            <a href="/docs/pages/star-rating.html"> Star Rating </a>
           </li>
           <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href="">Snackbar </a>
+            <a href="/docs/pages/snackbar.html">Snackbar </a>
           </li>
+          <!-- extra utilities -->
           <li class="p-1 mt-5 text-xl text-grey-700 font-semibold">
             Other Utilities
           </li>
+          <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+            <a href="/docs/pages/grid-system.html"> Grid System </a>
+          </li>
+          <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+            <a href="/docs/pages/animation.html"> Animation </a>
+          </li>
 
           <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Grid System </a>
+            <a href="/docs/pages/effects.html"> Effects </a>
           </li>
           <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Spacing </a>
-          </li>
-          <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Animation </a>
-          </li>
-          <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Colors </a>
-          </li>
-          <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Effects </a>
-          </li>
-          <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-            <a href=""> Typography </a>
+            <a href="/docs/pages/typography.html"> Typography </a>
           </li>
         </ul>
       </nav>
@@ -122,14 +127,20 @@
         class="p-10 mt-10 col-8-xl col-8-lg col-12-sm docs-page">
         <h3 class="h3 font-semibold text-xl mb-5">Introduction</h3>
 
-        <h5 class="h5 font-normal text-lg">
-          A utility-first CSS framework packed with classes like flex, pt-4,
-          justify-center and bg-cyan-500 that can be composed to build any
+        <h5 class="h5 font-normal text-lg mb-5">
+          A utility-first CSS framework packed with classes like <span
+            class="text-cyan-500 underline bg-cyan-100">flex</span>,
+          <span class="text-cyan-500 underline bg-cyan-100">flex-col</span>,
+          <span class="text-cyan-500 underline bg-cyan-100">w-10</span>,
+          <span class="text-cyan-500 underline bg-cyan-100">pt-4</span>,
+          <span class="text-cyan-500 underline bg-cyan-100">justify-center</span>
+          and<span class="text-cyan-500 underline bg-cyan-100">bg-cyan-500</span>
+          that can be composed to build any
           design, directly in your markup.
         </h5>
 
         <h6 class="h6 font-normal text-lg mb-10">
-          Get started Even with the same color palette and sizing scale, it's
+          Even with the same color palette and sizing scale, it's
           easy to build the same component with a completely different look in
           the next project.
         </h6>
@@ -150,8 +161,8 @@
             </code>
           </pre>
         <div class="page-footer flex justify-between">
-          <a href="#" class="btn btn-link-cyan"> Getting Started </a>
-          <a href="#" class="btn btn-link-cyan"> Alert </a>
+          <a href="docs.html" class="btn btn-link-cyan"> Getting Started </a>
+          <a href="/docs/pages/colors.html" class="btn btn-link-cyan"> Colors </a>
         </div>
       </section>
     </div>

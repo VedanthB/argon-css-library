@@ -49,72 +49,74 @@
 
         <div style="min-height: 90vh" class="w-full justify-end flex">
             <!-- sidebar -->
-            <nav style="overflow: scroll; top: 3rem; width: 20%; bottom: 92px"
-                class="h-full relative docs-sidenav col-4-xl col-4-lg">
+            <nav style="top: 3rem; width: 20%; bottom: 0" class="h-full relative docs-sidenav pl-10 col-4-xl col-4-lg">
                 <ul class="flex flex-col mb-40 p-5">
+                    <!-- getting started -->
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="../docs.html">Getting Started</a>
+                        <a href="/docs/docs.html">Getting Started</a>
                     </li>
+                    <li class="p-1 text-lg font-normal   cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/colors.html"> Colors </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/spacing.html"> Spacing </a>
+                    </li>
+                    <!-- components -->
                     <li class="p-1 text-xl text-grey-700 mt-5 font-semibold">
                         <a> Components </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="alert.html"> Alert </a>
+                        <a href="/docs/pages/alert.html"> Alert </a>
                     </li>
                     <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
-                        <a href="avatar.html"> Avatar </a>
+                        <a href="/docs/pages/avatar.html"> Avatar </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/badge.html"> Badge </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/button.html"> Button </a>
                     </li>
                     <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
-                        <a href="badge.html"> Badge </a>
+                        <a href="/docs/pages/cards.html"> Cards </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="button.html"> Button </a>
-                    </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="cards.html"> Cards </a>
+                        <a href="/docs/pages/image.html"> Image </a>
                     </li>
                     <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
-                        <a href="image.html"> Image </a>
+                        <a href="/docs/pages/input.html"> Input </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="input.html"> Input </a>
+                        <a href="/docs/pages/list.html"> Lists </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal text-cyan-500 cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/navigation.html"> Navigation </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="lists.html"> Lists </a>
-                    </li>
-                    <li class="p-1 text-lg font-normal text-cyan-500  cursor-pointer text-hover-cyan-500">
-                        <a href="navigation.html"> Navigation </a>
+                        <a href="/docs/pages/modal.html"> Modal </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="modal.html"> Modal </a>
+                        <a href="/docs/pages/star-rating.html"> Star Rating </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="star-rating.html"> Star Rating </a>
+                        <a href="/docs/pages/snackbar.html">Snackbar </a>
                     </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="snackbar.html">Snackbar </a>
-                    </li>
+                    <!-- extra utilities -->
                     <li class="p-1 mt-5 text-xl text-grey-700 font-semibold">
                         Other Utilities
                     </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/grid-system.html"> Grid System </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/animation.html"> Animation </a>
+                    </li>
 
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="grid-system.html"> Grid System </a>
+                        <a href="/docs/pages/effects.html"> Effects </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="spacing-html"> Spacing </a>
-                    </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="animation.html"> Animation </a>
-                    </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="colors.html"> Colors </a>
-                    </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="effects.html"> Effects </a>
-                    </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="typography.html"> Typography </a>
+                        <a href="/docs/pages/typography.html"> Typography </a>
                     </li>
                 </ul>
             </nav>
@@ -126,6 +128,10 @@
                 <h5 class="h5 font-normal text-lg mb-5">
                     Navigation bar is used to navigate through the web apps or websites. This navigation component is
                     responsive. It is a hamburger menu in medium and small devices
+                </h5>
+
+                <h5 class="h5 font-normal text-lg mb-5">
+                    Argon CSS offers a responsive top navigation for desktop and side navigation.
                 </h5>
 
                 <h3 class="h3 font-semibold text-xl mb-5">Examples</h3>
@@ -157,6 +163,36 @@
                             </nav>
                         </header>
                     </div>
+
+
+                    <pre style="max-width: 70%; background: transparent; margin: auto;">
+                   <code class="html mt-14 rounded-lg overflow-scroll h-full w-full">
+&lt;header style="position: relative" class="docs-header">
+    &lt;nav class="topnav flex justify-between bg-grey-800">
+        &lt;input id="nav-toggle" class="invisible" type="checkbox" />
+        &lt;a class="text-white text-lg logo">&lt;span class="text-lg text-cyan-500">Ar&lt;/span>gon&lt;/a>
+        &lt;ul class="links">
+            &lt;li>
+                &lt;a class="text-cyan-600 text-hover-cyan-400 text-lg mr-4" href="#home">Documentation&lt;/a>
+            &lt;/li>
+            &lt;li>
+                &lt;a class="text-cyan-600 text-hover-cyan-400 flex justify-center align-items-center text-lg"
+                    href="#about">
+                    &lt;i class="fab fa-github mr-2">&lt;/i>
+                    Github
+                &lt;/a>
+            &lt;/li>
+        &lt;/ul>
+        &lt;label for="nav-toggle" class="icon-burger">
+            &lt;div class="line">&lt;/div>
+            &lt;div class="line">&lt;/div>
+            &lt;div class="line">&lt;/div>
+        &lt;/label>
+    &lt;/nav>
+&lt;/header>
+                   </code>
+                </pre>
+
                     <div class="mb-5">
                         <a class="btn m-10 btn-solid-amber shadow-lg text-white" onclick="openNav()">open sidebar
                             nav</a>
@@ -164,6 +200,11 @@
                             (off-canvas)</a>
                         <a class="btn m-10 btn-solid-rose shadow-lg text-white" onclick="openFullNav()">open sidebar nav
                             (full width)</a>
+
+                        <div class="alert-box bg-cyan-200 text-cyan-800">
+                            <span><i class="alert-icon fas fa-exclamation-triangle"></i></span>
+                            Javascript is required for side navigation.
+                        </div>
 
                         <div id="mySidenav" class="sidenav">
                             <a href="javascript:void(0)" class="text-white closebtn" onclick="closeOffNav()">&times;</a>
@@ -228,7 +269,7 @@
                    </code>
                 </pre>
 
-                <h5 class="h5 text-lg"> javascript </h5>
+                <h4 class="h4 font-semibold text-xl mb-5 underline"> javascript </h4>
 
                 <pre style="max-width: 70%; background: transparent; margin: auto;">
                     <code class="javascript rounded-lg overflow-scroll h-full w-full">
@@ -261,10 +302,10 @@ function closeNav() {
 
 
                 <div class="page-footer flex justify-between">
-                    <a href="list.html" class="btn btn-link-cyan">
+                    <a href="/docs/pages/list.html" class="btn btn-link-cyan">
                         Lists
                     </a>
-                    <a href="modal.html" class="btn btn-link-cyan"> Modal </a>
+                    <a href="/docs/pages/modal.html" class="btn btn-link-cyan"> Modal </a>
                 </div>
 
             </section>

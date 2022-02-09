@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="../night-owl.css" />
 
-    <title>Buttons</title>
+    <title>Cards</title>
 </head>
 
 <body>
@@ -49,72 +49,74 @@
 
         <div style="min-height: 90vh" class="w-full justify-end flex">
             <!-- sidebar -->
-            <nav style="overflow: scroll; top: 3rem; width: 20%; bottom: 92px"
-                class="h-full relative docs-sidenav col-4-xl col-4-lg">
+            <nav style="top: 3rem; width: 20%; bottom: 0" class="h-full relative docs-sidenav pl-10 col-4-xl col-4-lg">
                 <ul class="flex flex-col mb-40 p-5">
+                    <!-- getting started -->
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="../docs.html">Getting Started</a>
+                        <a href="/docs/docs.html">Getting Started</a>
                     </li>
+                    <li class="p-1 text-lg font-normal   cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/colors.html"> Colors </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/spacing.html"> Spacing </a>
+                    </li>
+                    <!-- components -->
                     <li class="p-1 text-xl text-grey-700 mt-5 font-semibold">
                         <a> Components </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="alert.html"> Alert </a>
+                        <a href="/docs/pages/alert.html"> Alert </a>
                     </li>
                     <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
-                        <a href="avatar.html"> Avatar </a>
-                    </li>
-                    <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
-                        <a href="badge.html"> Badge </a>
+                        <a href="/docs/pages/avatar.html"> Avatar </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="button.html"> Button </a>
+                        <a href="/docs/pages/badge.html"> Badge </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/button.html"> Button </a>
                     </li>
                     <li class="p-1 text-lg font-normal text-cyan-500 cursor-pointer text-hover-cyan-500">
-                        <a href="cards.html"> Cards </a>
+                        <a href="/docs/pages/cards.html"> Cards </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="image.html"> Image </a>
+                        <a href="/docs/pages/image.html"> Image </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="input.html"> Input </a>
+                        <a href="/docs/pages/input.html"> Input </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="list.html"> Lists </a>
+                        <a href="/docs/pages/list.html"> Lists </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="navigation.html"> Navigation </a>
+                        <a href="/docs/pages/navigation.html"> Navigation </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="modal.html"> Modal </a>
+                        <a href="/docs/pages/modal.html"> Modal </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="star-rating.html"> Star Rating </a>
+                        <a href="/docs/pages/star-rating.html"> Star Rating </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="snackbar.html">Snackbar </a>
+                        <a href="/docs/pages/snackbar.html">Snackbar </a>
                     </li>
+                    <!-- extra utilities -->
                     <li class="p-1 mt-5 text-xl text-grey-700 font-semibold">
                         Other Utilities
                     </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/grid-system.html"> Grid System </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/animation.html"> Animation </a>
+                    </li>
 
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="grid-system.html"> Grid System </a>
+                        <a href="/docs/pages/effects.html"> Effects </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="spacing-html"> Spacing </a>
-                    </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="animation.html"> Animation </a>
-                    </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="colors.html"> Colors </a>
-                    </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="effects.html"> Effects </a>
-                    </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
-                        <a href="typography.html"> Typography </a>
+                        <a href="/docs/pages/typography.html"> Typography </a>
                     </li>
                 </ul>
             </nav>
@@ -130,6 +132,8 @@
                 <h3 class="h3 font-semibold text-xl mb-5">Examples</h3>
 
                 <div class="p-5">
+                    <h4 class="h4 font-semibold text-xl mb-5 underline">Vertical Card</h4>
+
                     <div class="flex justify-between">
                         <div style="width: 380px" class="mr-3">
                             <div class="shadow-md">
@@ -164,106 +168,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-80">
-                            <div class="flex flex-col shadow-md rounded-md">
-                                <div class="overlay">
-                                    <div class="badge-container img-container">
-                                        <img class="rounded-md img-responsive" src="https://picsum.photos/350/250"
-                                            alt="" srcset="https://picsum.photos/350/250" />
-                                        <span class="absolute font-bold card-badge badge bg-grey-500 text-white">Out of
-                                            Stock</span>
-                                        <button class="btn-close bg-rose-500"></button>
-                                    </div>
-                                    <div class="flex flex-col p-5">
-                                        <div class="flex justify-between align-items-center">
-                                            <h5 class="h5 font-semibold">Title</h5>
-                                            <i class="fas fa-heart text-grey-500 text-hover-rose-500"></i>
-                                        </div>
-                                        <div class="flex mt-3 mb-10">
-                                            <p class="subtitle1 line-through mr-3">Price</p>
-                                            <p class="subtitle1 text-rose-500">price</p>
-                                        </div>
-
-                                        <a class="btn btn-disabled bg-rose-600 bg-hover-rose-400 w-36 text-white"><span><i
-                                                    class="btn-icon fas fa-shopping-cart"></i></span>Add to
-                                            Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="flex justify-between mt-5">
-                        <div class="flex flex-col shadow-md rounded-md mr-3">
-                            <div class="badge-container img-container">
-                                <img class="rounded-md img-responsive" src="https://picsum.photos/350/250" alt=""
-                                    srcset="https://picsum.photos/350/250" />
-                                <span class="absolute card-badge badge bg-rose-500 text-white">New</span>
-                                <button class="btn-close bg-rose-500"></button>
-                            </div>
-                            <div class="flex flex-col p-5">
-                                <div class="flex justify-between align-items-center">
-                                    <h5 class="h5 font-semibold">Title</h5>
-                                    <i class="fas fa-heart text-grey-500 text-hover-rose-500"></i>
-                                </div>
-                                <div class="flex mt-3 mb-10">
-                                    <p class="subtitle1 line-through mr-3">Price</p>
-                                    <p class="subtitle1 text-rose-500">price</p>
-                                </div>
-
-                                <a class="btn bg-rose-600 bg-hover-rose-400 w-36 text-white"><span><i
-                                            class="btn-icon fas fa-shopping-cart"></i></span>Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                        <div class="flex flex-col shadow-md rounded-md">
-                            <div class="badge-container img-container">
-                                <img class="rounded-md img-responsive" src="https://picsum.photos/350/250" alt=""
-                                    srcset="" />
-                                <span class="absolute card-badge badge bg-rose-500 text-white">New</span>
-                            </div>
-                            <div class="flex flex-col p-5">
-                                <div class="flex justify-between align-items-center">
-                                    <h5 class="h5 font-semibold">Title</h5>
-                                    <i class="fas fa-heart text-grey-500 text-hover-rose-500"></i>
-                                </div>
-                                <div class="flex mt-3 mb-10">
-                                    <p class="subtitle1 line-through mr-3">Price</p>
-                                    <p class="subtitle1 text-rose-500">price</p>
-                                </div>
-
-                                <a class="btn bg-rose-600 bg-hover-rose-400 w-36 text-white"><span><i
-                                            class="btn-icon fas fa-shopping-cart"></i></span>Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex mt-5">
-                        <div style="height: 100%; width: 100%" class="flex shadow rounded-md">
-                            <div class="badge-container img-container">
-                                <img class="rounded-md h-full img-responsive" src="https://picsum.photos/350/250" alt=""
-                                    srcset="" />
-                                <span class="absolute card-badge badge bg-rose-500 text-white">New</span>
-                            </div>
-                            <div class="card-description p-6">
-                                <h5 class="h5 font-bold">Title</h5>
-                                <div class="flex mt-3 mb-28">
-                                    <p class="subtitle1 line-through mr-3">Price</p>
-                                    <p class="subtitle1 text-rose-500">price</p>
-                                </div>
-                                <div class="flex">
-                                    <a href="#" class="btn bg-rose-600 bg-hover-rose-400 text-white mr-4"><span><i
-                                                class="btn-icon fas fa-shopping-cart"></i></span>Add to
-                                        Cart</a><a href="#" class="btn btn-link-slate"><span><i
-                                                class="btn-icon fas fa-shopping-cart"></i></span>Add to
-                                        wishlist</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <pre style="max-width: 70%; background: transparent; margin: auto;">
+                    <pre style="max-width: 70%; background: transparent; margin: auto;">
                    <code class="html rounded-lg overflow-scroll h-full w-full">
 &lt;div style="width: 380px" class="mr-3">
     &lt;div class="shadow-md">
@@ -297,7 +203,45 @@
     &lt;/div>
 &lt;/div>
 
+                   </code>
+                </pre>
 
+                    <h4 class="h4 font-semibold text-xl mb-5 underline">Overlay Vertical Card</h4>
+
+
+                    <div class="flex justify-between mt-5">
+                        <div class="w-80">
+                            <div class="flex flex-col shadow-md rounded-md">
+                                <div class="overlay">
+                                    <div class="badge-container img-container">
+                                        <img class="rounded-md img-responsive" src="https://picsum.photos/350/250"
+                                            alt="" srcset="https://picsum.photos/350/250" />
+                                        <span class="absolute font-bold card-badge badge bg-grey-500 text-white">Out
+                                            of
+                                            Stock</span>
+                                        <button class="btn-close bg-rose-500"></button>
+                                    </div>
+                                    <div class="flex flex-col p-5">
+                                        <div class="flex justify-between align-items-center">
+                                            <h5 class="h5 font-semibold">Title</h5>
+                                            <i class="fas fa-heart text-grey-500 text-hover-rose-500"></i>
+                                        </div>
+                                        <div class="flex mt-3 mb-10">
+                                            <p class="subtitle1 line-through mr-3">Price</p>
+                                            <p class="subtitle1 text-rose-500">price</p>
+                                        </div>
+
+                                        <a class="btn btn-disabled bg-rose-600 bg-hover-rose-400 w-36 text-white"><span><i
+                                                    class="btn-icon fas fa-shopping-cart"></i></span>Add to
+                                            Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <pre style="max-width: 70%; background: transparent; margin: auto;">
+                   <code class="html rounded-lg overflow-scroll h-full w-full">
 &lt;div class="w-80">
     &lt;div class="flex flex-col shadow-md rounded-md">
         &lt;div class="overlay">
@@ -325,55 +269,39 @@
         &lt;/div>
     &lt;/div>
 &lt;/div>
+                   </code>
+                </pre>
+
+                    <h4 class="h4 font-semibold text-xl mb-5 underline">Horizontal Card</h4>
 
 
-&lt;div class="flex flex-col shadow-md rounded-md mr-3">
-    &lt;div class="badge-container img-container">
-        &lt;img class="rounded-md img-responsive" src="https://picsum.photos/350/250" alt=""
-            srcset="https://picsum.photos/350/250" />
-        &lt;span class="absolute card-badge badge bg-rose-500 text-white">New&lt;/span>
-        &lt;button class="btn-close bg-rose-500">&lt;/button>
-    &lt;/div>
-    &lt;div class="flex flex-col p-5">
-        &lt;div class="flex justify-between align-items-center">
-            &lt;h5 class="h5 font-semibold">Title&lt;/h5>
-            &lt;i class="fas fa-heart text-grey-500 text-hover-rose-500">&lt;/i>
-        &lt;/div>
-        &lt;div class="flex mt-3 mb-10">
-            &lt;p class="subtitle1 line-through mr-3">Price&lt;/p>
-            &lt;p class="subtitle1 text-rose-500">price&lt;/p>
-        &lt;/div>
+                    <div class="flex mt-5">
+                        <div style="height: 100%; width: 100%" class="flex shadow rounded-md">
+                            <div class="badge-container img-container">
+                                <img class="rounded-md h-full img-responsive" src="https://picsum.photos/350/250" alt=""
+                                    srcset="" />
+                                <span class="absolute card-badge badge bg-rose-500 text-white">New</span>
+                            </div>
+                            <div class="card-description p-6">
+                                <h5 class="h5 font-bold">Title</h5>
+                                <div class="flex mt-3 mb-28">
+                                    <p class="subtitle1 line-through mr-3">Price</p>
+                                    <p class="subtitle1 text-rose-500">price</p>
+                                </div>
+                                <div class="flex">
+                                    <a href="#" class="btn bg-rose-600 bg-hover-rose-400 text-white mr-4"><span><i
+                                                class="btn-icon fas fa-shopping-cart"></i></span>Add to
+                                        Cart</a><a href="#" class="btn btn-link-slate"><span><i
+                                                class="btn-icon fas fa-shopping-cart"></i></span>Add to
+                                        wishlist</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        &lt;a class="btn bg-rose-600 bg-hover-rose-400 w-36 text-white">&lt;span>&lt;i
-                    class="btn-icon fas fa-shopping-cart">&lt;/i>&lt;/span>Add to
-            Cart&lt;/a>
-    &lt;/div>
-&lt;/div>
-
-
-&lt;div class="flex flex-col shadow-md rounded-md">
-    &lt;div class="badge-container img-container">
-        &lt;img class="rounded-md img-responsive" src="https://picsum.photos/350/250" alt="" srcset="" />
-        &lt;span class="absolute card-badge badge bg-rose-500 text-white">New&lt;/span>
-    &lt;/div>
-    &lt;div class="flex flex-col p-5">
-        &lt;div class="flex justify-between align-items-center">
-            &lt;h5 class="h5 font-semibold">Title&lt;/h5>
-            &lt;i class="fas fa-heart text-grey-500 text-hover-rose-500">&lt;/i>
-        &lt;/div>
-        &lt;div class="flex mt-3 mb-10">
-            &lt;p class="subtitle1 line-through mr-3">Price&lt;/p>
-            &lt;p class="subtitle1 text-rose-500">price&lt;/p>
-        &lt;/div>
-
-        &lt;a class="btn bg-rose-600 bg-hover-rose-400 w-36 text-white">&lt;span>&lt;i
-                    class="btn-icon fas fa-shopping-cart">&lt;/i>&lt;/span>Add to
-            Cart&lt;/a>
-    &lt;/div>
-&lt;/div>
-
-
-
+                <pre style="max-width: 70%; background: transparent; margin: auto;">
+                   <code class="html rounded-lg overflow-scroll h-full w-full">
 &lt;div style="height: 100%; width: 100%" class="flex shadow rounded-md">
     &lt;div class="badge-container img-container">
         &lt;img class="rounded-md img-responsive" src="https://picsum.photos/350/250" alt="" srcset="" />
@@ -399,10 +327,10 @@
 
 
                 <div class="page-footer flex justify-between">
-                    <a href="button.htmll" class="btn btn-link-cyan">
+                    <a href="/docs/pages/button.htmll" class="btn btn-link-cyan">
                         Button
                     </a>
-                    <a href="image.html" class="btn btn-link-cyan"> Images </a>
+                    <a href="/docs/pages/image.html" class="btn btn-link-cyan"> Images </a>
                 </div>
 
             </section>
