@@ -25,6 +25,7 @@ components
 @import "./card.css";
 @import "./input.css";
 @import "./navigation.css";
+@import "./star-rating.css";
 
 nav::-webkit-scrollbar {
   width: 5px;
