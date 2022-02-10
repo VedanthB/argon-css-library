@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../docs.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../night-owl.css" />
+
+    <title>Spacing</title>
+</head>
+
+<body>
+    <div class="flex flex-row">
+        <!-- header -->
+        <header class="docs-header">
+            <nav class="topnav flex justify-between bg-grey-800">
+                <input id="nav-toggle" type="checkbox" />
+                <a class="text-white text-lg logo"><span class="text-lg text-cyan-500">Ar</span>gon</a>
+                <ul class="links">
+                    <li>
+                        <a class="text-cyan-600 text-hover-cyan-400 text-lg mr-4" href="#home">Documentation</a>
+                    </li>
+                    <li>
+                        <a class="text-cyan-600 text-hover-cyan-400 flex justify-center align-items-center text-lg"
+                            href="#about">
+                            <i class="fab fa-github mr-2"></i>
+                            Github
+                        </a>
+                    </li>
+                </ul>
+                <label for="nav-toggle" class="icon-burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label>
+            </nav>
+        </header>
+
+        <div style="min-height: 90vh" class="w-full justify-end flex">
+            <!-- sidebar -->
+            <nav style="top: 3rem; width: 20%; bottom: 0" class="h-full relative docs-sidenav pl-10 col-4-xl col-4-lg">
+                <ul class="flex flex-col mb-40 p-5">
+                    <!-- getting started -->
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/docs.html">Getting Started</a>
+                    </li>
+                    <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/colors.html"> Colors </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal text-cyan-500 cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/spacing.html"> Spacing </a>
+                    </li>
+                    <!-- components -->
+                    <li class="p-1 text-xl text-grey-700 mt-5 font-semibold">
+                        <a> Components </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/alert.html"> Alert </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/avatar.html"> Avatar </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/badge.html"> Badge </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/button.html"> Button </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/cards.html"> Cards </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/image.html"> Image </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/input.html"> Input </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/list.html"> Lists </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/navigation.html"> Navigation </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/modal.html"> Modal </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/star-rating.html"> Star Rating </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/snackbar.html">Snackbar </a>
+                    </li>
+                    <!-- extra utilities -->
+                    <li class="p-1 mt-5 text-xl text-grey-700 font-semibold">
+                        Other Utilities
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/grid-system.html"> Grid System </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/animation.html"> Animation </a>
+                    </li>
+
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/effects.html"> Effects </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/typography.html"> Typography </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- pages -->
+            <section style="overflow-y: scroll; top: 3rem; width: 80%"
+                class="p-10 relative col-8-xl col-8-lg col-12-sm docs-page mb-20">
+                <h3 class="h3 font-semibold text-xl mb-5">Spacing</h3>
+
+                <h5 class="h5 font-normal text-lg mb-5">
+                    <span class="text-cyan-500 bg-cyan-100">Argon CSS</span> includes a generous and comprehensive
+                    numeric spacing scale. The values are proportional, so 16 is twice as much spacing as 8 for example.
+                    One spacing unit is equal to 0.25rem, which translates to 4px by default in common browsers.
+
+                    <br class="mb-5">
+                    All spacing like margin, padding have the respective classes
+                    margin -<span class="text-cyan-500 bg-cyan-100 underline"> m</span>,
+                    padding -<span class="text-cyan-500 bg-cyan-100 underline"> p</span>,
+                    width -<span class="text-cyan-500 bg-cyan-100 underline"> w</span>,
+                    height -<span class="text-cyan-500 bg-cyan-100 underline"> h</span>,
+                    margin-top -<span class="text-cyan-500 bg-cyan-100 underline"> mt</span>,
+                    margin-bottom -<span class="text-cyan-500 bg-cyan-100 underline"> mb</span>,
+                    margin-left -<span class="text-cyan-500 bg-cyan-100 underline"> ml</span>,
+                    margin-right -<span class="text-cyan-500 bg-cyan-100 underline"> mr</span>,
+                    padding-top -<span class="text-cyan-500 bg-cyan-100 underline"> pt</span>,
+                    padding-bottom -<span class="text-cyan-500 bg-cyan-100 underline"> pb</span>,
+                    padding-left -<span class="text-cyan-500 bg-cyan-100 underline"> pl</span>,
+                    padding-right -<span class="text-cyan-500 bg-cyan-100 underline"> pr</span>,
+
+                    <br class="mb-5">
+
+                    All the spacing classes can be used with this chart for example <span
+                        class="text-cyan-500 bg-cyan-100 underline">pt-5</span> or <span
+                        class="text-cyan-500 bg-cyan-100 underline">mb-10</span> or <span
+                        class="text-cyan-500 bg-cyan-100 underline">w-10</span>
+                </h5>
+
+                <div class="p-5">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;Size</td>
+                                <td>&nbsp;Value in rem</td>
+                                <td>&nbsp;Value in px</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;1</td>
+                                <td>0.25rem</td>
+                                <td>4px</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;2</td>
+                                <td>0.5rem</td>
+                                <td>8px</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;3</td>
+                                <td>0.75rem</td>
+                                <td>12px</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;4</td>
+                                <td>1rem</td>
+                                <td>16px</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;5</td>
+                                <td>1.25rem</td>
+                                <td>20px</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;6</td>
+                                <td>1.5rem</td>
+                                <td>24px</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;7</td>
+                                <td>1.75rem</td>
+                                <td>28px</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;8</td>
+                                <td>2rem</td>
+                                <td>32px</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;9</td>
+                                <td>2.25rem</td>
+                                <td>36px</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>2.5rem</td>
+                                <td>40px</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>2.75rem</td>
+                                <td>44px</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>3rem</td>
+                                <td>48px</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>3.5rem</td>
+                                <td>56px</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>4rem</td>
+                                <td>64px</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>5rem</td>
+                                <td>80px</td>
+                            </tr>
+                            <tr>
+                                <td>24</td>
+                                <td>6rem</td>
+                                <td>96px</td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>7rem</td>
+                                <td>112px</td>
+                            </tr>
+                            <tr>
+                                <td>32</td>
+                                <td>8rem</td>
+                                <td>128px</td>
+                            </tr>
+                            <tr>
+                                <td>36</td>
+                                <td>9rem</td>
+                                <td>144px</td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>10rem</td>
+                                <td>160px</td>
+                            </tr>
+                            <tr>
+                                <td>44</td>
+                                <td>11rem</td>
+                                <td>176px</td>
+                            </tr>
+                            <tr>
+                                <td>48</td>
+                                <td>12rem</td>
+                                <td>192px</td>
+                            </tr>
+                            <tr>
+                                <td>52</td>
+                                <td>12rem</td>
+                                <td>208px</td>
+                            </tr>
+                            <tr>
+                                <td>56</td>
+                                <td>14rem</td>
+                                <td>224px</td>
+                            </tr>
+                            <tr>
+                                <td>60</td>
+                                <td>15rem</td>
+                                <td>240px</td>
+                            </tr>
+                            <tr>
+                                <td>64</td>
+                                <td>16rem</td>
+                                <td>256px</td>
+                            </tr>
+                            <tr>
+                                <td>72</td>
+                                <td>18rem</td>
+                                <td>288px</td>
+                            </tr>
+                            <tr>
+                                <td>80</td>
+                                <td>20rem</td>
+                                <td>320px</td>
+                            </tr>
+                            <tr>
+                                <td>96</td>
+                                <td>24rem</td>
+                                <td>384px</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="page-footer flex justify-between">
+                    <a href="/docs/pages/colors.html" class="btn btn-link-cyan">
+                        Colors
+                    </a>
+                    <a href="/docs/pages/alert.html" class="btn btn-link-cyan"> Alert </a>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- footer -->
+        <footer style="bottom: 0"
+            class="docs-footer text-white fixed flex flex-col justify-center align-items-center w-full p-5 z-50 bg-cyan-100">
+            <div class="text-grey-700">
+                Made with
+                <span class="text-cyan-700 font-bold ml-1 mr-1">&lt;/&gt; </span> by
+                <a href="#" style="padding: 0; text-transform: none" class="ml-1 btn btn-link-cyan">vedanth</a>
+            </div>
+            <div class="flex mt-3 align-items-center justify-center">
+                <i class="fab fa-github mr-2 text-cyan-700"></i>
+                <i class="fab fa-twitter mr-2 text-cyan-700"></i>
+                <i class="fab fa-linkedin mr-2 text-cyan-700"></i>
+                <i class="fab fa-dev text-cyan-700"></i>
+            </div>
+        </footer>
+    </div>
+    <script src="../highlight.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>

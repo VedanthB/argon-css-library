@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../docs.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../night-owl.css" />
+
+    <title>Cards</title>
+</head>
+
+<body>
+    <div class="flex flex-row">
+        <!-- header -->
+        <header class="docs-header">
+            <nav class="topnav flex justify-between bg-grey-800">
+                <input id="nav-toggle" type="checkbox" />
+                <a class="text-white text-lg logo"><span class="text-lg text-cyan-500">Ar</span>gon</a>
+                <ul class="links">
+                    <li>
+                        <a class="text-cyan-600 text-hover-cyan-400 text-lg mr-4" href="#home">Documentation</a>
+                    </li>
+                    <li>
+                        <a class="text-cyan-600 text-hover-cyan-400 flex justify-center align-items-center text-lg"
+                            href="#about">
+                            <i class="fab fa-github mr-2"></i>
+                            Github
+                        </a>
+                    </li>
+                </ul>
+                <label for="nav-toggle" class="icon-burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label>
+            </nav>
+        </header>
+
+        <div style="min-height: 90vh" class="w-full justify-end flex">
+            <!-- sidebar -->
+            <nav style="top: 3rem; width: 20%; bottom: 0" class="h-full relative docs-sidenav pl-10 col-4-xl col-4-lg">
+                <ul class="flex flex-col mb-40 p-5">
+                    <!-- getting started -->
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/docs.html">Getting Started</a>
+                    </li>
+                    <li class="p-1 text-lg font-normal   cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/colors.html"> Colors </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/spacing.html"> Spacing </a>
+                    </li>
+                    <!-- components -->
+                    <li class="p-1 text-xl text-grey-700 mt-5 font-semibold">
+                        <a> Components </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/alert.html"> Alert </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/avatar.html"> Avatar </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/badge.html"> Badge </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/button.html"> Button </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal text-cyan-500 cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/cards.html"> Cards </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/image.html"> Image </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/input.html"> Input </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/list.html"> Lists </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/navigation.html"> Navigation </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/modal.html"> Modal </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/star-rating.html"> Star Rating </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/snackbar.html">Snackbar </a>
+                    </li>
+                    <!-- extra utilities -->
+                    <li class="p-1 mt-5 text-xl text-grey-700 font-semibold">
+                        Other Utilities
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/grid-system.html"> Grid System </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/animation.html"> Animation </a>
+                    </li>
+
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/effects.html"> Effects </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/typography.html"> Typography </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- pages -->
+            <section style="overflow-y: scroll; top: 3rem; width: 80%"
+                class="p-10 relative col-8-xl col-8-lg col-12-sm docs-page mb-20">
+                <h3 class="h3 font-semibold text-xl mb-5">Cards</h3>
+
+                <h5 class="h5 font-normal text-lg mb-5">
+                    Card are used to show user related data collectively, like product details.
+                </h5>
+
+                <h3 class="h3 font-semibold text-xl mb-5">Examples</h3>
+
+                <div class="p-5">
+                    <h4 class="h4 font-semibold text-xl mb-5 underline">Vertical Card</h4>
+
+                    <div class="flex justify-between">
+                        <div style="width: 380px" class="mr-3">
+                            <div class="shadow-md">
+                                <div class="badge-container">
+                                    <span class="absolute font-bold card-badge badge bg-rose-500 text-white">New</span>
+                                    <div class="p-5">
+                                        <img class="img-responsive" src="https://picsum.photos/380/300" alt="" />
+                                    </div>
+                                    <button class="btn-close bg-rose-500"></button>
+                                </div>
+                                <div class="p-5">
+                                    <span class="text-sm text-grey-500">Some Product</span>
+                                    <h4 class="h4 font-normal text-lg subtitle1">
+                                        <a href="">Some Title</a>
+                                    </h4>
+                                    <p class="body1 text-sm font-light mb-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+                                        possimus nostrum!
+                                    </p>
+                                    <hr class="mb-3" />
+                                    <div class="flex justify-between">
+                                        <div class="product-price">
+                                            <small class="line-through mr-2">Rs.96.00</small>Rs. 230.99
+                                        </div>
+                                        <div class="flex">
+                                            <a href=""><i
+                                                    class="fa fa-heart mr-3 text-grey-400 text-hover-cyan-500"></i></a>
+                                            <a href=""><i
+                                                    class="fa fa-shopping-cart text-grey-400 text-hover-cyan-500"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <pre style="max-width: 70%; background: transparent; margin: auto;">
+                   <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;div style="width: 380px" class="mr-3">
+    &lt;div class="shadow-md">
+        &lt;div class="badge-container">
+            &lt;span class="absolute font-bold card-badge badge bg-rose-500 text-white">New&lt;/span>
+            &lt;div class="p-5">
+                &lt;img class="img-responsive" src="https://picsum.photos/380/300" alt="" />
+            &lt;/div>
+            &lt;button class="btn-close bg-rose-500">&lt;/button>
+        &lt;/div>
+        &lt;div class="p-5">
+            &lt;span class="text-sm text-grey-500">Some Product&lt;/span>
+            &lt;h4 class="h4 font-normal text-lg subtitle1">
+                &lt;a href="">Some Title&lt;/a>
+            &lt;/h4>
+            &lt;p class="body1 text-sm font-light mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+                possimus nostrum!
+            &lt;/p>
+            &lt;hr class="mb-3" />
+            &lt;div class="flex justify-between">
+                &lt;div class="product-price">
+                    &lt;small class="line-through mr-2">Rs.96.00&lt;/small>Rs. 230.99
+                &lt;/div>
+                &lt;div class="flex">
+                    &lt;a href="">&lt;i class="fa fa-heart mr-3 text-grey-400 text-hover-cyan-500">&lt;/i>&lt;/a>
+                    &lt;a href="">&lt;i class="fa fa-shopping-cart text-grey-400 text-hover-cyan-500">&lt;/i>&lt;/a>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+
+                   </code>
+                </pre>
+
+                    <h4 class="h4 font-semibold text-xl mb-5 underline">Overlay Vertical Card</h4>
+
+
+                    <div class="flex justify-between mt-5">
+                        <div class="w-80">
+                            <div class="flex flex-col shadow-md rounded-md">
+                                <div class="overlay">
+                                    <div class="badge-container img-container">
+                                        <img class="rounded-md img-responsive" src="https://picsum.photos/350/250"
+                                            alt="" srcset="https://picsum.photos/350/250" />
+                                        <span class="absolute font-bold card-badge badge bg-grey-500 text-white">Out
+                                            of
+                                            Stock</span>
+                                        <button class="btn-close bg-rose-500"></button>
+                                    </div>
+                                    <div class="flex flex-col p-5">
+                                        <div class="flex justify-between align-items-center">
+                                            <h5 class="h5 font-semibold">Title</h5>
+                                            <i class="fas fa-heart text-grey-500 text-hover-rose-500"></i>
+                                        </div>
+                                        <div class="flex mt-3 mb-10">
+                                            <p class="subtitle1 line-through mr-3">Price</p>
+                                            <p class="subtitle1 text-rose-500">price</p>
+                                        </div>
+
+                                        <a class="btn btn-disabled bg-rose-600 bg-hover-rose-400 w-36 text-white"><span><i
+                                                    class="btn-icon fas fa-shopping-cart"></i></span>Add to
+                                            Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <pre style="max-width: 70%; background: transparent; margin: auto;">
+                   <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;div class="w-80">
+    &lt;div class="flex flex-col shadow-md rounded-md">
+        &lt;div class="overlay">
+            &lt;div class="badge-container img-container">
+                &lt;img class="rounded-md img-responsive" src="https://picsum.photos/350/250" alt=""
+                    srcset="https://picsum.photos/350/250" />
+                &lt;span class="absolute font-bold card-badge badge bg-grey-500 text-white">Out of
+                    Stock&lt;/span>
+                &lt;button class="btn-close bg-rose-500">&lt;/button>
+            &lt;/div>
+            &lt;div class="flex flex-col p-5">
+                &lt;div class="flex justify-between align-items-center">
+                    &lt;h5 class="h5 font-semibold">Title&lt;/h5>
+                    &lt;i class="fas fa-heart text-grey-500 text-hover-rose-500">&lt;/i>
+                &lt;/div>
+                &lt;div class="flex mt-3 mb-10">
+                    &lt;p class="subtitle1 line-through mr-3">Price&lt;/p>
+                    &lt;p class="subtitle1 text-rose-500">price&lt;/p>
+                &lt;/div>
+
+                &lt;a class="btn btn-disabled bg-rose-600 bg-hover-rose-400 w-36 text-white">&lt;span>&lt;i
+                            class="btn-icon fas fa-shopping-cart">&lt;/i>&lt;/span>Add to
+                    Cart&lt;/a>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+                   </code>
+                </pre>
+
+                    <h4 class="h4 font-semibold text-xl mb-5 underline">Horizontal Card</h4>
+
+
+                    <div class="flex mt-5">
+                        <div style="height: 100%; width: 100%" class="flex shadow rounded-md">
+                            <div class="badge-container img-container">
+                                <img class="rounded-md h-full img-responsive" src="https://picsum.photos/350/250" alt=""
+                                    srcset="" />
+                                <span class="absolute card-badge badge bg-rose-500 text-white">New</span>
+                            </div>
+                            <div class="card-description p-6">
+                                <h5 class="h5 font-bold">Title</h5>
+                                <div class="flex mt-3 mb-28">
+                                    <p class="subtitle1 line-through mr-3">Price</p>
+                                    <p class="subtitle1 text-rose-500">price</p>
+                                </div>
+                                <div class="flex">
+                                    <a href="#" class="btn bg-rose-600 bg-hover-rose-400 text-white mr-4"><span><i
+                                                class="btn-icon fas fa-shopping-cart"></i></span>Add to
+                                        Cart</a><a href="#" class="btn btn-link-slate"><span><i
+                                                class="btn-icon fas fa-shopping-cart"></i></span>Add to
+                                        wishlist</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <pre style="max-width: 70%; background: transparent; margin: auto;">
+                   <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;div style="height: 100%; width: 100%" class="flex shadow rounded-md">
+    &lt;div class="badge-container img-container">
+        &lt;img class="rounded-md img-responsive" src="https://picsum.photos/350/250" alt="" srcset="" />
+        &lt;span class="absolute card-badge badge bg-rose-500 text-white">New&lt;/span>
+    &lt;/div>
+    &lt;div class="card-description p-6">
+        &lt;h5 class="h5 font-bold">Title&lt;/h5>
+        &lt;div class="flex mt-3 mb-28">
+            &lt;p class="subtitle1 line-through mr-3">Price&lt;/p>
+            &lt;p class="subtitle1 text-rose-500">price&lt;/p>
+        &lt;/div>
+        &lt;div class="flex">
+            &lt;a href="#" class="btn bg-rose-600 bg-hover-rose-400 text-white mr-4">&lt;span>&lt;i
+                        class="btn-icon fas fa-shopping-cart">&lt;/i>&lt;/span>Add to
+                Cart&lt;/a>&lt;a href="#" class="btn btn-link-slate">&lt;span>&lt;i
+                        class="btn-icon fas fa-shopping-cart">&lt;/i>&lt;/span>Add to
+                wishlist&lt;/a>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+                   </code>
+                </pre>
+
+
+                <div class="page-footer flex justify-between">
+                    <a href="/docs/pages/button.htmll" class="btn btn-link-cyan">
+                        Button
+                    </a>
+                    <a href="/docs/pages/image.html" class="btn btn-link-cyan"> Images </a>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- footer -->
+        <footer style="bottom: 0"
+            class="docs-footer text-white fixed flex flex-col justify-center align-items-center w-full p-5 z-50 bg-cyan-100">
+            <div class="text-grey-700">
+                Made with
+                <span class="text-cyan-700 font-bold ml-1 mr-1">&lt;/&gt; </span> by
+                <a href="#" style="padding: 0; text-transform: none" class="ml-1 btn btn-link-cyan">vedanth</a>
+            </div>
+            <div class="flex mt-3 align-items-center justify-center">
+                <i class="fab fa-github mr-2 text-cyan-700"></i>
+                <i class="fab fa-twitter mr-2 text-cyan-700"></i>
+                <i class="fab fa-linkedin mr-2 text-cyan-700"></i>
+                <i class="fab fa-dev text-cyan-700"></i>
+            </div>
+        </footer>
+    </div>
+    <script src="../highlight.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>

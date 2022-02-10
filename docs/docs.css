@@ -1,0 +1,42 @@
+.docs-sidenav::-webkit-scrollbar {
+  width: 2px;
+}
+
+.docs-sidenav::-webkit-scrollbar-track {
+  background-color: var(--cyan-500);
+}
+
+.docs-sidenav::-webkit-scrollbar-thumb {
+  background: var(--cyan-200);
+  border-radius: 25px;
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--cyan-500);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--cyan-200);
+  border-radius: 25px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../docs.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../night-owl.css" />
+
+    <title>Navigation</title>
+</head>
+
+<body>
+    <div class="flex flex-row">
+        <!-- header -->
+        <header class="docs-header">
+            <nav class="topnav flex justify-between bg-grey-800">
+                <input id="nav-toggle" type="checkbox" />
+                <a class="text-white text-lg logo"><span class="text-lg text-cyan-500">Ar</span>gon</a>
+                <ul class="links">
+                    <li>
+                        <a class="text-cyan-600 text-hover-cyan-400 text-lg mr-4" href="#home">Documentation</a>
+                    </li>
+                    <li>
+                        <a class="text-cyan-600 text-hover-cyan-400 flex justify-center align-items-center text-lg"
+                            href="#about">
+                            <i class="fab fa-github mr-2"></i>
+                            Github
+                        </a>
+                    </li>
+                </ul>
+                <label for="nav-toggle" class="icon-burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label>
+            </nav>
+        </header>
+
+        <div style="min-height: 90vh" class="w-full justify-end flex">
+            <!-- sidebar -->
+            <nav style="top: 3rem; width: 20%; bottom: 0" class="h-full relative docs-sidenav pl-10 col-4-xl col-4-lg">
+                <ul class="flex flex-col mb-40 p-5">
+                    <!-- getting started -->
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/docs.html">Getting Started</a>
+                    </li>
+                    <li class="p-1 text-lg font-normal   cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/colors.html"> Colors </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/spacing.html"> Spacing </a>
+                    </li>
+                    <!-- components -->
+                    <li class="p-1 text-xl text-grey-700 mt-5 font-semibold">
+                        <a> Components </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/alert.html"> Alert </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/avatar.html"> Avatar </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/badge.html"> Badge </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/button.html"> Button </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/cards.html"> Cards </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/image.html"> Image </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/input.html"> Input </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/list.html"> Lists </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal text-cyan-500 cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/navigation.html"> Navigation </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/modal.html"> Modal </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/star-rating.html"> Star Rating </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/snackbar.html">Snackbar </a>
+                    </li>
+                    <!-- extra utilities -->
+                    <li class="p-1 mt-5 text-xl text-grey-700 font-semibold">
+                        Other Utilities
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/grid-system.html"> Grid System </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/animation.html"> Animation </a>
+                    </li>
+
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/effects.html"> Effects </a>
+                    </li>
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                        <a href="/docs/pages/typography.html"> Typography </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- pages -->
+            <section style="overflow-y: scroll; top: 3rem; width: 80%"
+                class="p-10 relative col-8-xl col-8-lg col-12-sm docs-page mb-20">
+                <h3 class="h3 font-semibold text-xl mb-5">Navigation</h3>
+
+                <h5 class="h5 font-normal text-lg mb-5">
+                    Navigation bar is used to navigate through the web apps or websites. This navigation component is
+                    responsive. It is a hamburger menu in medium and small devices
+                </h5>
+
+                <h5 class="h5 font-normal text-lg mb-5">
+                    Argon CSS offers a responsive top navigation for desktop and side navigation.
+                </h5>
+
+                <h3 class="h3 font-semibold text-xl mb-5">Examples</h3>
+
+                <div class="p-5">
+                    <div class="mb-5">
+                        <header style="position: relative" class="docs-header">
+                            <nav class="topnav flex justify-between bg-grey-800">
+                                <input id="nav-toggle" class="invisible" type="checkbox" />
+                                <a class="text-white text-lg logo"><span class="text-lg text-cyan-500">Ar</span>gon</a>
+                                <ul class="links">
+                                    <li>
+                                        <a class="text-cyan-600 text-hover-cyan-400 text-lg mr-4"
+                                            href="#home">Documentation</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-cyan-600 text-hover-cyan-400 flex justify-center align-items-center text-lg"
+                                            href="#about">
+                                            <i class="fab fa-github mr-2"></i>
+                                            Github
+                                        </a>
+                                    </li>
+                                </ul>
+                                <label for="nav-toggle" class="icon-burger">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                </label>
+                            </nav>
+                        </header>
+                    </div>
+
+
+                    <pre style="max-width: 70%; background: transparent; margin: auto;">
+                   <code class="html mt-14 rounded-lg overflow-scroll h-full w-full">
+&lt;header style="position: relative" class="docs-header">
+    &lt;nav class="topnav flex justify-between bg-grey-800">
+        &lt;input id="nav-toggle" class="invisible" type="checkbox" />
+        &lt;a class="text-white text-lg logo">&lt;span class="text-lg text-cyan-500">Ar&lt;/span>gon&lt;/a>
+        &lt;ul class="links">
+            &lt;li>
+                &lt;a class="text-cyan-600 text-hover-cyan-400 text-lg mr-4" href="#home">Documentation&lt;/a>
+            &lt;/li>
+            &lt;li>
+                &lt;a class="text-cyan-600 text-hover-cyan-400 flex justify-center align-items-center text-lg"
+                    href="#about">
+                    &lt;i class="fab fa-github mr-2">&lt;/i>
+                    Github
+                &lt;/a>
+            &lt;/li>
+        &lt;/ul>
+        &lt;label for="nav-toggle" class="icon-burger">
+            &lt;div class="line">&lt;/div>
+            &lt;div class="line">&lt;/div>
+            &lt;div class="line">&lt;/div>
+        &lt;/label>
+    &lt;/nav>
+&lt;/header>
+                   </code>
+                </pre>
+
+                    <div class="mb-5">
+                        <a class="btn m-10 btn-solid-amber shadow-lg text-white" onclick="openNav()">open sidebar
+                            nav</a>
+                        <a class="btn m-10 btn-solid-rose shadow-lg text-white" onclick="openOffNav()">open sidebar nav
+                            (off-canvas)</a>
+                        <a class="btn m-10 btn-solid-rose shadow-lg text-white" onclick="openFullNav()">open sidebar nav
+                            (full width)</a>
+
+                        <div class="alert-box bg-cyan-200 text-cyan-800">
+                            <span><i class="alert-icon fas fa-exclamation-triangle"></i></span>
+                            Javascript is required for side navigation.
+                        </div>
+
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="text-white closebtn" onclick="closeOffNav()">&times;</a>
+                            <div class="nav overflow-scroll">
+                                <a href="#" class="block p-5 text-rose-500">About</a>
+                                <a href="#" class="block p-5 text-white">Services</a>
+                                <a href="#" class="block p-5 text-white">Clients</a>
+                                <a href="#" class="block p-5 text-white">Contact</a>
+                                <a href="#" class="block p-5 text-white">About</a>
+                                <a href="#" class="block p-5 text-white">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        /* Set the width of the side navigation to 250px */
+                        function openNav() {
+                            document.getElementById("mySidenav").style.width = "250px";
+                        }
+                        /* Open the sidenav */
+                        function openFullNav() {
+                            document.getElementById("mySidenav").style.width = "100%";
+                        }
+
+                        function openOffNav() {
+                            document.getElementById("mySidenav").style.width = "250px";
+                            document.body.style.marginLeft = "250px";
+                        }
+
+                        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+                        function closeOffNav() {
+                            document.getElementById("mySidenav").style.width = "0";
+                            document.body.style.marginLeft = "0";
+                        }
+
+                        /* Set the width of the side navigation to 0 */
+                        function closeNav() {
+                            document.getElementById("mySidenav").style.width = "0";
+                        }
+                    </script>
+                </div>
+
+                <pre style="max-width: 70%; background: transparent; margin: auto;">
+                   <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;a class="btn m-10 btn-solid-amber shadow-lg text-white" onclick="openNav()">open sidebar
+    nav&lt;/a>
+&lt;a class="btn m-10 btn-solid-rose shadow-lg text-white" onclick="openOffNav()">open sidebar nav
+    (off-canvas)&lt;/a>
+&lt;a class="btn m-10 btn-solid-rose shadow-lg text-white" onclick="openFullNav()">open sidebar nav
+    (full width)&lt;/a>
+
+&lt;div id="mySidenav" class="sidenav">
+    &lt;a href="javascript:void(0)" class="text-white closebtn" onclick="closeOffNav()">&times;&lt;/a>
+    &lt;div class="nav overflow-scroll">
+        &lt;a href="#" class="block p-5 text-rose-500">About&lt;/a>
+        &lt;a href="#" class="block p-5 text-white">Services&lt;/a>
+        &lt;a href="#" class="block p-5 text-white">Clients&lt;/a>
+        &lt;a href="#" class="block p-5 text-white">Contact&lt;/a>
+        &lt;a href="#" class="block p-5 text-white">About&lt;/a>
+        &lt;a href="#" class="block p-5 text-white">Contact&lt;/a>
+    &lt;/div>
+&lt;/div> 
+                   </code>
+                </pre>
+
+                <h4 class="h4 font-semibold text-xl mb-5 underline"> javascript </h4>
+
+                <pre style="max-width: 70%; background: transparent; margin: auto;">
+                    <code class="javascript rounded-lg overflow-scroll h-full w-full">
+/* Set the width of the side navigation to 250px */
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+/* Open the sidenav */
+function openFullNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function openOffNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.body.style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeOffNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.body.style.marginLeft = "0";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+ document.getElementById("mySidenav").style.width = "0";
+} 
+                    </code>
+                 </pre>
+
+
+                <div class="page-footer flex justify-between">
+                    <a href="/docs/pages/list.html" class="btn btn-link-cyan">
+                        Lists
+                    </a>
+                    <a href="/docs/pages/modal.html" class="btn btn-link-cyan"> Modal </a>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- footer -->
+        <footer style="bottom: 0"
+            class="docs-footer text-white fixed flex flex-col justify-center align-items-center w-full p-5 z-50 bg-cyan-100">
+            <div class="text-grey-700">
+                Made with
+                <span class="text-cyan-700 font-bold ml-1 mr-1">&lt;/&gt; </span> by
+                <a href="#" style="padding: 0; text-transform: none" class="ml-1 btn btn-link-cyan">vedanth</a>
+            </div>
+            <div class="flex mt-3 align-items-center justify-center">
+                <i class="fab fa-github mr-2 text-cyan-700"></i>
+                <i class="fab fa-twitter mr-2 text-cyan-700"></i>
+                <i class="fab fa-linkedin mr-2 text-cyan-700"></i>
+                <i class="fab fa-dev text-cyan-700"></i>
+            </div>
+        </footer>
+    </div>
+    <script src="../highlight.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>

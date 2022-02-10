@@ -37,7 +37,7 @@
   opacity: 0.5;
   cursor: pointer;
   outline: none;
-  z-index: 99;
+  z-index: var(--base-z-index);
 }
 .btn-close:focus {
   box-shadow: 0 0 0 2px black;
