@@ -40,3 +40,48 @@ td {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
+.docs-sidenav {
+  top: 3rem;
+  width: 20%;
+  bottom: 0;
+}
+
+.docs-page {
+  overflow-y: scroll;
+  top: 3rem;
+  width: 80%;
+  margin-bottom: 5rem;
+}
+
+.sidenav-active-link {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.mySidenavToggle {
+  display: none;
+  position: fixed;
+}
+
+/* On screens that are 992px or less, */
+@media screen and (max-width: 992px) {
+  .docs-sidenav {
+    display: none;
+  }
+
+  .docs-page {
+    overflow-y: scroll;
+    top: 3rem;
+    width: 100%;
+    margin-bottom: 7rem;
+  }
+
+  .mySidenavToggle {
+    display: block;
+    top: 3rem;
+    position: fixed;
+    margin: 0.75rem;
+    z-index: 10;
+  }
+}
