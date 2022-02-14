@@ -94,7 +94,7 @@
   left: 0;
   background-color: #111; /* Black*/
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 4rem;
   transition: 0.5s;
 }
 
@@ -102,8 +102,8 @@
 
 .sidenav .closebtn {
   position: absolute;
-  top: 60px;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  top: 3.75rem;
+  right: 1.5rem;
+  font-size: 2.25rem;
+  margin-left: 3rem;
 }
