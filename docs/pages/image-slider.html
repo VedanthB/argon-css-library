@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="../night-owl.css" />
 
-    <title>List</title>
+    <title>Image Slider</title>
 </head>
 
 <body>
@@ -63,7 +63,7 @@
                     <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500">
                         <a href="/docs/docs.html">Getting Started</a>
                     </li>
-                    <li class="p-1 text-lg font-normal text-cyan-500  cursor-pointer text-cyan-500 ">
+                    <li class="p-1 text-lg font-normal text-cyan-500  cursor-pointer text-cyan-500">
                         <a href="/docs/pages/colors.html"> Colors </a>
                     </li>
                     <li class="p-1 text-lg font-normal  cursor-pointer text-cyan-500">
@@ -88,13 +88,13 @@
                     <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500">
                         <a href="/docs/pages/cards.html"> Cards </a>
                     </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500">
+                    <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500 ">
                         <a href="/docs/pages/image.html"> Image </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500">
                         <a href="/docs/pages/input.html"> Input </a>
                     </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500 sidenav-active-link">
+                    <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500">
                         <a href="/docs/pages/list.html"> Lists </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500">
@@ -112,7 +112,7 @@
                     <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500">
                         <a href="/docs/pages/tooltip.html">Tooltip </a>
                     </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500 sidenav-active-link">
                         <a href="/docs/pages/image-slider.html">Image Slider</a>
                     </li>
                     <!-- extra utilities -->
@@ -136,6 +136,7 @@
             </div>
         </div>
         <!-- responsive sidenav -->
+
 
 
         <div style="min-height: 90vh" class="w-full justify-end flex">
@@ -171,13 +172,13 @@
                     <li class="p-1 text-lg font-normal  cursor-pointer text-hover-cyan-500">
                         <a href="/docs/pages/cards.html"> Cards </a>
                     </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500 ">
                         <a href="/docs/pages/image.html"> Image </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
                         <a href="/docs/pages/input.html"> Input </a>
                     </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500  text-cyan-500">
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
                         <a href="/docs/pages/list.html"> Lists </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
@@ -195,7 +196,7 @@
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
                         <a href="/docs/pages/tooltip.html">Tooltip</a>
                     </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500 text-cyan-500">
                         <a href="/docs/pages/image-slider.html">Image Slider</a>
                     </li>
                     <!-- extra utilities -->
@@ -218,131 +219,161 @@
                 </ul>
             </nav>
             <!-- pages -->
-            <section class="p-10 relative  docs-page ">
-                <h3 class="h3 font-semibold text-xl mb-5">Lists</h3>
+            <section class="p-10 relative  docs-page">
+                <h3 class="h3 font-semibold text-xl mb-5">Image Slider</h3>
 
                 <h5 class="h5 font-normal text-lg mb-5">
-                    Lists can be used at many places like navigation bar, stacked notifications, article pages, etc.
+                    A slideshow is used to cycle through Image elements
                 </h5>
 
-                <h3 class="h3 font-semibold text-xl mb-5">Examples</h3>
+                <h3 class="h3 font-semibold text-xl mb-5">Example</h3>
 
                 <div class="p-5">
-                    <h4 class="h4 font-semibold text-xl mb-5 underline">Horizontal Stacked List</h4>
-                    <div class="mb-2">
-                        <ul class="w-72">
-                            <li class="text-lg p-4 m-1 bg-grey-100">
-                                <i class="text-grey-500 btn-icon fas fa-shopping-cart"></i>
-                                this is a list normal
-                            </li>
-                            <li class="text-lg p-4 m-1 bg-grey-100">this is a list normal</li>
-                            <li class="text-lg p-4 m-1 bg-grey-100">this is a list normal</li>
-                        </ul>
+
+                    <div>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="https://picsum.photos/500/200" style="width:100%">
+                                <div class="text">Caption Text</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="https://picsum.photos/500/200" style="width:100%">
+                                <div class="text">Caption Two</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="https://picsum.photos/500/200" style="width:100%">
+                                <div class="text">Caption Three</div>
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        </div>
+                        <br>
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
                     </div>
+
+                    <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n) {
+                            showSlides((slideIndex += n));
+                        }
+
+                        function currentSlide(n) {
+                            showSlides((slideIndex = n));
+                        }
+
+                        function showSlides(n) {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) {
+                                slideIndex = 1;
+                            }
+                            if (n < 1) {
+                                slideIndex = slides.length;
+                            }
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                        }
+                    </script>
                     <pre style="max-width: 70%; background: transparent; margin: auto;">
                    <code class="html rounded-lg overflow-scroll h-full w-full">
-    &lt;ul class="w-72">
-        &lt;li class="text-lg p-4 m-1">
-            &lt;i class="text-grey-500 btn-icon fas fa-shopping-cart">&lt;/i>
-            this is a list normal
-        &lt;/li>
-        &lt;li class="text-lg p-4 m-1">this is a list normal&lt;/li>
-        &lt;li class="text-lg p-4 m-1">this is a list normal&lt;/li>
-    &lt;/ul>
+&lt;div class="slideshow-container">
+    &lt;div class="mySlides fade">
+        &lt;div class="numbertext">1 / 3&lt;/div>
+        &lt;img src="https://picsum.photos/500/200" style="width:100%">
+        &lt;div class="text">Caption Text&lt;/div>
+    &lt;/div>
+
+    &lt;div class="mySlides fade">
+        &lt;div class="numbertext">2 / 3&lt;/div>
+        &lt;img src="https://picsum.photos/500/200" style="width:100%">
+        &lt;div class="text">Caption Two&lt;/div>
+    &lt;/div>
+
+    &lt;div class="mySlides fade">
+        &lt;div class="numbertext">3 / 3&lt;/div>
+        &lt;img src="https://picsum.photos/500/200" style="width:100%">
+        &lt;div class="text">Caption Three&lt;/div>
+    &lt;/div>
+
+    &lt;a class="prev" onclick="plusSlides(-1)">&#10094;&lt;/a>
+    &lt;a class="next" onclick="plusSlides(1)">&#10095;&lt;/a>
+
+&lt;/div>
+&lt;br>
+
+&lt;div style="text-align:center">
+    &lt;span class="dot" onclick="currentSlide(1)">&lt;/span>
+    &lt;span class="dot" onclick="currentSlide(2)">&lt;/span>
+    &lt;span class="dot" onclick="currentSlide(3)">&lt;/span>
+&lt;/div>
                    </code>
                 </pre>
 
-                    <h4 class="h4 font-semibold text-xl mb-5 underline">Vertical Stacked List</h4>
-                    <div class="mb-2">
-                        <ul class="flex flex-wrap flex-row">
-                            <li class="text-lg p-4 m-1 bg-grey-100">
-                                <i class="text-grey-500 btn-icon fas fa-shopping-cart"></i>
-                                Some this is a list normal
-                            </li>
-                            <li class="text-lg p-4 m-1 bg-grey-100">this is a list normal</li>
-                            <li class="text-lg p-4 m-1 bg-grey-100">this is a list normal</li>
-                        </ul>
-                    </div>
                     <pre style="max-width: 70%; background: transparent; margin: auto;">
-                   <code class="html rounded-lg overflow-scroll h-full w-full">
-    &lt;ul class="flex flex-row">
-        &lt;li class="text-lg p-4 m-1">
-            &lt;i class="text-grey-500 btn-icon fas fa-shopping-cart">&lt;/i>
-            Some this is a list normal
-        &lt;/li>
-        &lt;li class="text-lg p-4 m-1">this is a list normal&lt;/li>
-        &lt;li class="text-lg p-4 m-1">this is a list normal&lt;/li>
-    &lt;/ul>
-                   </code>
-                </pre>
-                    <h4 class="h4 font-semibold text-xl mb-5 underline">Notification Stacked List</h4>
-                    <div style="width: 600px">
-                        <ul>
-                            <li class="flex flex-wrap text-lg p-5 m-1 bg-grey-100">
-                                <div class="avatar avatar-sm">
-                                    <img src="/components/images/avatar-img.jpeg" alt="avatar-img"
-                                        class="img-round img-responsive" />
-                                </div>
-                                <div class="ml-5 flex flex-col text-overflow-truncate">
-                                    <h5 class="text-xl font-semibold">Bella</h5>
-                                    <p class="subtitle2 font-light text-md">
-                                        This is some text hdjsbdjbs sjndjsd jnjsnd sdjnsjdnsdjsdjnsdknsd
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="flex flex-wrap text-lg p-5 m-1 bg-grey-100">
-                                <div class="avatar avatar-sm">
-                                    <img src="/components/images/avatar-img.jpeg" alt="avatar-img"
-                                        class="img-round img-responsive" />
-                                </div>
-                                <div class="ml-5 flex flex-col text-overflow-truncate">
-                                    <h5 class="text-xl font-semibold">Bella</h5>
-                                    <p class="subtitle2 font-light text-md">
-                                        This is some text hdjsbdjbs sjndjsd jnjsnd sdjnsjdnsdjsdjnsdknsd
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    <code class="javascript rounded-lg overflow-scroll h-full w-full">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+    showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+} 
+                    </code>
+                 </pre>
                 </div>
 
-                <pre style="max-width: 70%; background: transparent; margin: auto;">
-                   <code class="html rounded-lg overflow-scroll h-full w-full">
-    &lt;ul>
-        &lt;li class="flex text-lg p-5 m-1 bg-teal-100">
-            &lt;div class="avatar avatar-sm">
-                &lt;img src="components/images/avatar-img.jpeg" alt="avatar-img" 
-                    class="img-round img-responsive" />
-            &lt;/div>
-            &lt;div class="ml-5 flex flex-col text-overflow-truncate">
-                &lt;h5 class="text-xl font-semibold">Bella&lt;/h5>
-                &lt;p class="subtitle2 font-light text-md">
-                    This is some text hdjsbdjbs sjndjsd jnjsnd sdjnsjdnsdjsdjnsdknsd
-                &lt;/p>
-            &lt;/div>
-        &lt;/li>
-        &lt;li class="flex text-lg p-5 m-1 bg-teal-100">
-            &lt;div class="avatar avatar-sm">
-                &lt;img src="components/images/avatar-img.jpeg" alt="avatar-img" 
-                    class="img-round img-responsive" />
-            &lt;/div>
-            &lt;div class="ml-5 flex flex-col text-overflow-truncate">
-                &lt;h5 class="text-xl font-semibold">Bella&lt;/h5>
-                &lt;p class="subtitle2 font-light text-md">
-                    This is some text hdjsbdjbs sjndjsd jnjsnd sdjnsjdnsdjsdjnsdknsd
-                &lt;/p>
-            &lt;/div>
-        &lt;/li>
-    &lt;/ul>
-                   </code>
-                </pre>
+
 
 
                 <div class="page-footer flex justify-between">
-                    <a href="/docs/pages/input.html" class="btn btn-link-cyan">
-                        Input
+                    <a href="/docs/pages/tooltip.html" class="btn btn-link-cyan">
+                        Tooltip
                     </a>
-                    <a href="/docs/pages/navigation.html" class="btn btn-link-cyan"> Navigation </a>
+                    <a href="/docs/pages/grid-system.html" class="btn btn-link-cyan"> Grid System</a>
                 </div>
 
             </section>
@@ -350,7 +381,7 @@
 
         <!-- footer -->
         <footer style="bottom: 0"
-            class="docs-footer text-white fixed flex  flex-col justify-center align-items-center w-full p-5 z-50 bg-cyan-100">
+            class="docs-footer text-white fixed flex flex-col justify-center align-items-center w-full p-5 z-50 bg-cyan-100">
             <div class="text-grey-700">
                 Made with
                 <span class="text-cyan-700 font-bold ml-1 mr-1">&lt;/&gt; </span> by
