@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="../night-owl.css" />
 
-    <title>Grid System</title>
+    <title>Tooltip</title>
 </head>
 
 <body>
@@ -63,7 +63,7 @@
                     <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500">
                         <a href="/docs/docs.html">Getting Started</a>
                     </li>
-                    <li class="p-1 text-lg font-normal text-cyan-500  cursor-pointer text-cyan-500 ">
+                    <li class="p-1 text-lg font-normal text-cyan-500  cursor-pointer text-cyan-500">
                         <a href="/docs/pages/colors.html"> Colors </a>
                     </li>
                     <li class="p-1 text-lg font-normal  cursor-pointer text-cyan-500">
@@ -88,7 +88,7 @@
                     <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500">
                         <a href="/docs/pages/cards.html"> Cards </a>
                     </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500">
+                    <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500 ">
                         <a href="/docs/pages/image.html"> Image </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500">
@@ -109,14 +109,14 @@
                     <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500">
                         <a href="/docs/pages/snackbar.html">Snackbar </a>
                     </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500">
+                    <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500 sidenav-active-link">
                         <a href="/docs/pages/tooltip.html">Tooltip </a>
                     </li>
                     <!-- extra utilities -->
                     <li class="p-1 mt-5 text-xl text-white font-semibold">
                         Other Utilities
                     </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500 sidenav-active-link">
+                    <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500">
                         <a href="/docs/pages/grid-system.html"> Grid System </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500">
@@ -133,6 +133,7 @@
             </div>
         </div>
         <!-- responsive sidenav -->
+
 
 
         <div style="min-height: 90vh" class="w-full justify-end flex">
@@ -189,14 +190,14 @@
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
                         <a href="/docs/pages/snackbar.html">Snackbar </a>
                     </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
+                    <li class="p-1 text-lg font-normal cursor-pointer text-cyan-500 text-hover-cyan-500">
                         <a href="/docs/pages/tooltip.html">Tooltip</a>
                     </li>
                     <!-- extra utilities -->
                     <li class="p-1 mt-5 text-xl text-grey-700 font-semibold">
                         Other Utilities
                     </li>
-                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500  text-cyan-500">
+                    <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
                         <a href="/docs/pages/grid-system.html"> Grid System </a>
                     </li>
                     <li class="p-1 text-lg font-normal cursor-pointer text-hover-cyan-500">
@@ -213,251 +214,39 @@
             </nav>
             <!-- pages -->
             <section class="p-10 relative  docs-page">
-                <h3 class="h3 font-semibold text-xl mb-5">Grid System</h3>
+                <h3 class="h3 font-semibold text-xl mb-5">Tooltip</h3>
 
                 <h5 class="h5 font-normal text-lg mb-5">
-                    The grid is a 12-column fluid grid with a min width of 960px, that shrinks with the browser/device
-                    at smaller sizes. The min width can be changed with one line of CSS and all columns will resize
-                    accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the
-                    browser.
+                    Tooltips display informative text when users hover over, focus on, or tap an element.
+                    When activated, Tooltips display a text label identifying an element, such as a description of its
+                    function.
                 </h5>
-
-                <div class="mb-5">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>size</td>
-                                <td>breakpoint (min-width)</td>
-                            </tr>
-                            <tr style="height: 23.5px;">
-                                <td style="height: 23.5px;">xs</td>
-                                <td style="height: 23.5px;">0 px</td>
-                            </tr>
-                            <tr>
-                                <td>sm</td>
-                                <td>480 px</td>
-                            </tr>
-                            <tr>
-                                <td>md</td>
-                                <td>720 px</td>
-                            </tr>
-                            <tr>
-                                <td>lg</td>
-                                <td>960 px</td>
-                            </tr>
-                            <tr>
-                                <td>xl</td>
-                                <td>1200 px</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
 
                 <h3 class="h3 font-semibold text-xl mb-5">Examples</h3>
 
                 <div class="p-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-1-lg col-12-sm bg-grey-700 p-2 text-white">1</div>
-                            <div class="col-11-lg col-12-sm bg-grey-800 p-2 text-white">11</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2-lg col-12-sm bg-grey-700 p-2 text-white">2</div>
-                            <div class="col-10-lg col-12-sm bg-grey-800 p-2 text-white">10</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-3-lg col-12-sm bg-grey-700 p-2 text-white">3</div>
-                            <div class="col-9-lg col-12-sm bg-grey-800 p-2 text-white">9</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4-lg col-12-sm bg-grey-700 p-2 text-white">4</div>
-                            <div class="col-8-lg col-12-sm bg-grey-800 p-2 text-white">8</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-5-lg col-12-sm bg-grey-700 p-2 text-white">5</div>
-                            <div class="col-7-lg col-12-sm bg-grey-800 p-2 text-white">7</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6-lg col-12-sm bg-grey-700 p-2 text-white">6</div>
-                            <div class="col-6-lg col-12-sm bg-grey-800 p-2 text-white">6</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-7-lg col-12-sm bg-grey-700 p-2 text-white">7</div>
-                            <div class="col-5-lg col-12-sm bg-grey-800 p-2 text-white">5</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-8-lg col-12-sm bg-grey-700 p-2 text-white">8</div>
-                            <div class="col-4-lg col-12-sm bg-grey-800 p-2 text-white">4</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-9-lg col-12-sm bg-grey-700 p-2 text-white">9</div>
-                            <div class="col-3-lg col-12-sm bg-grey-800 p-2 text-white">3</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-10-lg col-12-sm bg-grey-700 p-2 text-white">10</div>
-                            <div class="col-2-lg col-12-sm bg-grey-800 p-2 text-white">2</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-11-lg col-12-sm bg-grey-700 p-2 text-white">12</div>
-                            <div class="col-1-lg col-12-sm bg-grey-800 p-2 text-white">1</div>
-                        </div>
-                    </div>
-                </div>
 
-                <pre style="max-width: 70%; background: transparent; margin: auto;">
+                    <div class="tooltip">Hover over me
+                        <span class="tooltip-text">Tooltip text</span>
+                    </div>
+
+                    <pre style="max-width: 70%; background: transparent; margin: auto;">
                    <code class="html rounded-lg overflow-scroll h-full w-full">
-&lt;div class="container">
-    &lt;div class="row">
-        &lt;div class="col-1-lg col-12-sm bg-grey-700 p-2 text-white">1&lt;/div>
-        &lt;div class="col-11-lg col-12-sm bg-grey-800 p-2 text-white">11&lt;/div>
-    &lt;/div>
-    &lt;div class="row">
-        &lt;div class="col-2-lg col-12-sm bg-grey-700 p-2 text-white">2&lt;/div>
-        &lt;div class="col-10-lg col-12-sm bg-grey-800 p-2 text-white">10&lt;/div>
-    &lt;/div>
-    &lt;div class="row">
-        &lt;div class="col-3-lg col-12-sm bg-grey-700 p-2 text-white">3&lt;/div>
-        &lt;div class="col-9-lg col-12-sm bg-grey-800 p-2 text-white">9&lt;/div>
-    &lt;/div>
-    &lt;div class="row">
-        &lt;div class="col-4-lg col-12-sm bg-grey-700 p-2 text-white">4&lt;/div>
-        &lt;div class="col-8-lg col-12-sm bg-grey-800 p-2 text-white">8&lt;/div>
-    &lt;/div>
-    &lt;div class="row">
-        &lt;div class="col-5-lg col-12-sm bg-grey-700 p-2 text-white">5&lt;/div>
-        &lt;div class="col-7-lg col-12-sm bg-grey-800 p-2 text-white">7&lt;/div>
-    &lt;/div>
-    &lt;div class="row">
-        &lt;div class="col-6-lg col-12-sm bg-grey-700 p-2 text-white">6&lt;/div>
-        &lt;div class="col-6-lg col-12-sm bg-grey-800 p-2 text-white">6&lt;/div>
-    &lt;/div>
-    &lt;div class="row">
-        &lt;div class="col-7-lg col-12-sm bg-grey-700 p-2 text-white">7&lt;/div>
-        &lt;div class="col-5-lg col-12-sm bg-grey-800 p-2 text-white">5&lt;/div>
-    &lt;/div>
-    &lt;div class="row">
-        &lt;div class="col-8-lg col-12-sm bg-grey-700 p-2 text-white">8&lt;/div>
-        &lt;div class="col-4-lg col-12-sm bg-grey-800 p-2 text-white">4&lt;/div>
-    &lt;/div>
-    &lt;div class="row">
-        &lt;div class="col-9-lg col-12-sm bg-grey-700 p-2 text-white">9&lt;/div>
-        &lt;div class="col-3-lg col-12-sm bg-grey-800 p-2 text-white">3&lt;/div>
-    &lt;/div>
-    &lt;div class="row">
-        &lt;div class="col-10-lg col-12-sm bg-grey-700 p-2 text-white">10&lt;/div>
-        &lt;div class="col-2-lg col-12-sm bg-grey-800 p-2 text-white">2&lt;/div>
-    &lt;/div>
-    &lt;div class="row">
-        &lt;div class="col-11-lg col-12-sm bg-grey-700 p-2 text-white">12&lt;/div>
-        &lt;div class="col-1-lg col-12-sm bg-grey-800 p-2 text-white">1&lt;/div>
-    &lt;/div>
+&lt;div class="tooltip">Hover over me
+   &lt;span class="tooltip-text">Tooltip text&lt;/span>
 &lt;/div>
                    </code>
                 </pre>
 
-                <div class="mb-5">
-                    <span class="text-cyan-500 underline bg-cyan-100">Argon CSS</span> also comes with utility classes
-                    for grid templates and row templates
                 </div>
 
-                <div class="mb-5">
-                    <table class="w-full text-left border-collapse">
-                        <thead>
-                            <tr>
-                                <th>
-                                    <div>Class
-                                    </div>
-                                </th>
-                                <th>
-                                    <div>Properties
-                                    </div>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>grid-cols-1</td>
-                                <td>grid-template-columns: repeat(1, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-cols-2</td>
-                                <td>grid-template-columns: repeat(2, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-cols-3</td>
-                                <td>grid-template-columns: repeat(3, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-cols-4</td>
-                                <td>grid-template-columns: repeat(4, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-cols-5</td>
-                                <td>grid-template-columns: repeat(5, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-cols-6</td>
-                                <td>grid-template-columns: repeat(6, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-cols-7</td>
-                                <td>grid-template-columns: repeat(7, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-cols-8</td>
-                                <td>grid-template-columns: repeat(8, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-cols-9</td>
-                                <td>grid-template-columns: repeat(9, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-cols-10</td>
-                                <td>grid-template-columns: repeat(10, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-cols-11</td>
-                                <td>grid-template-columns: repeat(11, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-cols-12</td>
-                                <td>grid-template-columns: repeat(12, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-rows-1</td>
-                                <td>grid-template-rows: repeat(1, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-rows-2</td>
-                                <td>grid-template-rows: repeat(2, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-rows-3</td>
-                                <td>grid-template-rows: repeat(3, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-rows-4</td>
-                                <td>grid-template-rows: repeat(4, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-rows-5</td>
-                                <td>grid-template-rows: repeat(5, minmax(0, 1fr));</td>
-                            </tr>
-                            <tr>
-                                <td>grid-rows-6</td>
-                                <td>grid-template-rows: repeat(6, minmax(0, 1fr));</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
 
 
                 <div class="page-footer flex justify-between">
-                    <a href="/docs/pages/tooltip.html" class="btn btn-link-cyan">
-                        Tooltip
+                    <a href="/docs/pages/snackbar.html" class="btn btn-link-cyan">
+                        Snackbar
                     </a>
-                    <a href="/docs/pages/animation.html" class="btn btn-link-cyan"> Animation </a>
+                    <a href="/docs/pages/grid-system.html" class="btn btn-link-cyan"> Grid System </a>
                 </div>
 
             </section>
