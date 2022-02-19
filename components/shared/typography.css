@@ -220,3 +220,18 @@
 .no-underline {
   text-decoration-line: none;
 }
+
+/* text center  */
+
+.text-center {
+  text-align: center;
+}
+.text-start {
+  text-align: start;
+}
+.text-end {
+  text-align: end;
+}
+.text-justify {
+  text-align: justify;
+}
