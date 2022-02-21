@@ -27,20 +27,19 @@ A utility-first CSS framework packed with classes like `flex`,`flex-col`, `w-10`
 A quick look at the top-level files and directories included in this project.
 
     .
-    ├── .storybook
-    ├── node_modules
-    ├── public
-    ├── src
-    ├── .env
-    ├── .gitignore
-    ├── LICENSE
-    ├── package.json
-    ├── yarn.lock
-    └── README.md
+    ├── components (css for all the components)----├──---------- images (all the images)
+    ├                                              ├──---------- shared (all the css that are shared accross the project)
+    |                                              ├──---------- index.css (all the css for the components only)
+    | 
+    ├── docs (html for the documnetation site)-----├──---- pages (contains all the html pages)  ├─ avatar.html (pages)
+    |                                                                                           ├─ badge.html .....
+    ├── index.html (landing page of the project)
+    ├── styles.css (main css file used for the doc site)
+   
 
 
 
 ## Contribute
 
-If you wish to contribute or have anu suggestions we can please raise issues on this repo.
+If you wish to contribute or have any suggestions we can please raise issues on this repo.
 
